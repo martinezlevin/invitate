@@ -86,6 +86,6 @@ MIT License
 
 📧 Email: gdmlevin@gmail.com
 
-💼 LinkedIn: Tu perfil
+💼 LinkedIn: https://www.linkedin.com/in/martinezlevin/
 
 🐱 GitHub: martinezlevin
