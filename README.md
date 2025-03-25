@@ -29,22 +29,32 @@ Proyecto de carrito de compras con integración de MercadoPago para procesamient
 
 ### Instalación
 1. Clona el repositorio:
+```bash
 git clone https://github.com/martinezlevin/e-shop.git
 cd e-shop
+```
 
 2. Instala las dependencias del servidor:
+```bash
 cd e-commerce-desde-cero/server
 npm install
+```
 
 3. Configura tus credenciales de MercadoPago:
+```bash
 Crea un archivo .env en la carpeta server con:
 MP_ACCESS_TOKEN=TU_ACCESS_TOKEN_DE_MERCADOPAGO
+```
 
 4. Inicia el servidor:
+```bash
 node index.js
+```
 
 5. Abre el cliente en tu navegador:
+```bash
 http://localhost:3000
+```
 
 📂 Estructura del proyecto
 
