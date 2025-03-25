@@ -29,7 +29,6 @@ Proyecto de carrito de compras con integración de MercadoPago para procesamient
 
 ### Instalación
 1. Clona el repositorio:
-```bash
 git clone https://github.com/martinezlevin/e-shop.git
 cd e-shop
 
