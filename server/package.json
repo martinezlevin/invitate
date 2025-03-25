@@ -1,21 +1,43 @@
 {
-  "name": "server",
+  "name": "e-shop-backend",
   "version": "1.0.0",
-  "description": "",
+  "description": "Backend para e-commerce con integración de MercadoPago",
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "start": "node index.js"
+    "start": "node index.js",
+    "dev": "nodemon index.js"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "keywords": [
+    "ecommerce",
+    "mercadopago",
+    "nodejs",
+    "express"
+  ],
+  "author": {
+    "name": "Guillermo Martinez",
+    "email": "gdmlevin@gmail.com",
+    "url": "https://github.com/martinezlevin"
+  },
+  "license": "MIT",
   "dependencies": {
     "cors": "^2.8.5",
     "express": "^4.21.2",
     "mercadopago": "^2.3.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/martinezlevin/e-shop.git"
+  },
+  "bugs": {
+    "url": "https://github.com/martinezlevin/e-shop/issues"
+  },
+  "homepage": "https://github.com/martinezlevin/e-shop#readme",
+  "engines": {
+    "node": ">=14.0.0",
+    "npm": ">=6.0.0"
   }
 }
-
-
-
