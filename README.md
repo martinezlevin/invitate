@@ -47,7 +47,9 @@ node index.js
 http://localhost:3000
 
 📂 Estructura del proyecto
-e-commerce-desde-cero/
+
+```bash
+e-shop/
 ├── client/               # Frontend
 │   ├── css/
 │   │   └── main.css      # Estilos principales
@@ -61,7 +63,7 @@ e-commerce-desde-cero/
 └── server/              # Backend
     ├── index.js          # Servidor Node.js
     └── package.json      # Dependencias
-
+```
 🔑 Credenciales de prueba
 Para modo desarrollo, usa credenciales de prueba de MercadoPago.
 
