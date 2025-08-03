@@ -1,3 +1,13 @@
+/*
+ * Copyright (c) 2025 Guillermo Martinez
+ * All Rights Reserved.
+ *
+ * Este código es propiedad exclusiva del autor.
+ * Queda prohibida su copia, distribución, modificación o uso sin autorización expresa.
+ */
+
+
+
 let productosEnCarrito = localStorage.getItem("productos-en-carrito");
 productosEnCarrito = JSON.parse(productosEnCarrito) || [];
 
@@ -267,13 +277,13 @@ function cargarMercadoPago() {
         const script = document.createElement('script');
         script.src = 'https://sdk.mercadopago.com/js/v2';
         script.onload = () => {
-            mp = new MercadoPago('APP_USR-f91e6fbd-a2f7-48e0-9a7f-00958e7e9884', {
+            mp = new MercadoPago('APP_USR-9d342558-57db-4798-acdc-daa78f0fddd8', {
                 locale: 'es-AR'
             });
             resolve();
         };
         document.body.appendChild(script);
-    });
+    }); //ESTE ES EL REAL Public Key
 }
 
 // Manejar la compra

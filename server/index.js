@@ -1,3 +1,15 @@
+/*
+ * Copyright (c) 2025 Guillermo Martinez
+ * All Rights Reserved.
+ *
+ * Este código es propiedad exclusiva del autor.
+ * Queda prohibida su copia, distribución, modificación o uso sin autorización expresa.
+ */
+
+
+import dotenv from 'dotenv';
+dotenv.config();
+
 import express from "express";
 import cors from "cors";
 import path from "path";
@@ -10,11 +22,11 @@ const __dirname = path.dirname(__filename);
 
 // Configurar MercadoPago
 const client = new MercadoPagoConfig({
-  accessToken: "APP_USR-1016968933693485-032422-f162109eead5a9d0889962053645b730-2348676633",
+  accessToken: process.env.MP_ACCESS_TOKEN, //ESTE ES EL REAL ACCESSTOKEN
 });
 
 const app = express();
-const port = 3000;
+const port = process.env.PORT || 3000;
 
 app.use(cors());
 app.use(express.json());
