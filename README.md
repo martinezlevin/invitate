@@ -60,42 +60,43 @@ Proyecto de carrito de compras con integración de MercadoPago para procesamient
 
 ```
 invitate/
+├── .gitignore               # Archivo para ignorar archivos en Git
 ├── README.md                # Documentación del proyecto
 ├── LICENSE.txt              # Licencia del proyecto
-├── client/                     # Frontend (Interfaz de usuario)
-│   ├── css/                    # Hojas de estilo CSS
-│   │   ├── ajax-loader-gif     # Recursos para animaciones de carga
-│   │   ├── main.css            # Estilos principales globales
-│   │   ├── normalize.css       # Normalización de estilos entre navegadores
-│   │   ├── product.css         # Estilos específicos para productos
-│   │   ├── style.css           # Estilos generales adicionales
+├── client/                  # Frontend (Interfaz de usuario)
+│   ├── css/                 # Hojas de estilo CSS
+│   │   ├── ajax-loader-gif  # Recursos para animaciones de carga
+│   │   ├── main.css         # Estilos principales globales
+│   │   ├── normalize.css    # Normalización de estilos entre navegadores
+│   │   ├── product.css      # Estilos específicos para productos
+│   │   ├── style.css        # Estilos generales adicionales
 │   │   ├── swiper-bundle.min.css # Estilos para sliders Swiper.js
-│   │   └── vendor.css          # Estilos de terceros / librerías
-│   ├── images/                 # Imágenes generales del sitio
-│   ├── img/                    # Imágenes específicas para el carrito
-│   ├── js/                     # Archivos JavaScript
-│   │   ├── carrito.js          # Lógica y funcionalidades del carrito de compras
-│   │   ├── jquery.min.js       # Librería jQuery minimizada
-│   │   ├── main.js             # Script principal del frontend
-│   │   ├── menu.js             # Control del menú y navegación
-│   │   ├── modernizr.js        # Detección de características del navegador
-│   │   ├── plugins.js          # Plugins y scripts adicionales
-│   │   ├── productos.json      # Datos JSON de productos
-│   │   ├── script.min.json     # JSON minimizado para scripts
-│   │   └── SmoothScroll.js     # Script para scroll suave
-│   ├── about.html              # Página “Acerca de”
-│   ├── carrito.html            # Página del carrito de compras
-│   ├── faq.html                # Página de Preguntas Frecuentes
-│   ├── form.html               # Página con formularios
-│   ├── index.html              # Página principal / home
-│   ├── menu.html               # Página de menú o navegación
-│   └── product.html            # Página de detalle de producto
-└── server/                     # Backend (Servidor Express / API)
-    ├── .env                   # Variables de entorno (no se versiona)
-    ├── index.js               # Archivo principal del servidor Node.js
-    ├── package.json           # Archivo de configuración y dependencias de Node.js
-    ├── package-lock.json      # Registro exacto de versiones instaladas
-    └── node_modules/          # Dependencias instaladas (ignoradas por Git)
+│   │   └── vendor.css       # Estilos de terceros / librerías
+│   ├── images/              # Imágenes generales del sitio
+│   ├── img/                 # Imágenes específicas para el carrito
+│   ├── js/                  # Archivos JavaScript
+│   │   ├── carrito.js       # Lógica y funcionalidades del carrito de compras
+│   │   ├── jquery.min.js    # Librería jQuery minimizada
+│   │   ├── main.js          # Script principal del frontend
+│   │   ├── menu.js          # Control del menú y navegación
+│   │   ├── modernizr.js     # Detección de características del navegador
+│   │   ├── plugins.js       # Plugins y scripts adicionales
+│   │   ├── productos.json   # Datos JSON de productos
+│   │   ├── script.min.json  # JSON minimizado para scripts
+│   │   └── SmoothScroll.js  # Script para scroll suave
+│   ├── about.html           # Página “Acerca de”
+│   ├── carrito.html         # Página del carrito de compras
+│   ├── faq.html             # Página de Preguntas Frecuentes
+│   ├── form.html            # Página con formularios
+│   ├── index.html           # Página principal / home
+│   ├── menu.html            # Página de menú o navegación
+│   └── product.html         # Página de detalle de producto
+└── server/                  # Backend (Servidor Express / API)
+    ├── .env                 # Variables de entorno (no versionado)
+    ├── index.js             # Archivo principal del servidor Node.js
+    ├── package.json         # Archivo de configuración y dependencias de Node.js
+    ├── package-lock.json    # Registro exacto de versiones instaladas
+    └── node_modules/        # Dependencias instaladas (ignoradas por Git)
 
 ```
 
