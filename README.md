@@ -1,65 +1,65 @@
-# 🛍️ E-commerce con MercadoPago
+# 🛍️ E-commerce INVITATE con MercadoPago
 
 Proyecto de carrito de compras con integración de MercadoPago para procesamiento de pagos.
 
 ## 🛠 Tecnologías utilizadas
-- **Frontend**: HTML5, CSS3, JavaScript (ES6+)
-- **Backend**: Node.js, Express
-- **SDK**: MercadoPago API v2
-- **Librerías**: 
-  - Toastify (notificaciones)
-  - SweetAlert2 (alertas personalizadas) 
+- **Frontend:** HTML5, CSS3, JavaScript (ES6+)
+- **Backend:** Node.js, Express
+- **SDK:** MercadoPago API v2
+- **Librerías:**  
+  - Toastify (notificaciones)  
+  - SweetAlert2 (alertas personalizadas)  
   - Bootstrap Icons (íconos)
 
 ## ✨ Características principales
-- 🛒 **Carrito interactivo** con gestión de productos
-- ➕➖ **Ajuste de cantidades** con validación (mínimo 1 unidad)
-- 🗑️ Eliminación individual de productos
-- 🧹 Opción para vaciar carrito completo
-- 💳 **Integración con MercadoPago** (botón dinámico)
-- 📱 **Diseño responsive** (móviles y desktop)
-- 💾 Persistencia en localStorage
+- 🛒 **Carrito interactivo** con gestión de productos  
+- ➕➖ **Ajuste de cantidades** con validación (mínimo 1 unidad)  
+- 🗑️ Eliminación individual de productos  
+- 🧹 Opción para vaciar el carrito completo  
+- 💳 **Integración con MercadoPago** (botón dinámico)  
+- 📱 **Diseño responsive** (móviles y desktop)  
+- 💾 Persistencia en `localStorage`
 
 ## 🚀 Cómo ejecutar el proyecto
 
 ### Requisitos
 - Node.js (v14+)
 - npm (v6+)
-- Cuenta MercadoPago
+- Cuenta en MercadoPago
 
 ### Instalación
 1. Clona el repositorio:
-```bash
-git clone https://github.com/martinezlevin/e-shop.git
-cd e-shop
-```
+   ```bash
+   git clone https://github.com/martinezlevin/invitate.git
+   cd invitate
+   ```
 
 2. Instala las dependencias del servidor:
-```bash
-cd e-commerce-desde-cero/server
-npm install
-```
+   ```bash
+   cd server
+   npm install
+   ```
 
-3. Configura tus credenciales de MercadoPago:
-```bash
-Crea un archivo .env en la carpeta server con:
-MP_ACCESS_TOKEN=TU_ACCESS_TOKEN_DE_MERCADOPAGO
-```
+3. Configura tus credenciales de MercadoPago:  
+   Crea un archivo `.env` en la carpeta `server` con el siguiente contenido:
+   ```
+   MP_ACCESS_TOKEN=TU_ACCESS_TOKEN_DE_MERCADOPAGO
+   ```
 
 4. Inicia el servidor:
-```bash
-node index.js
-```
+   ```bash
+   node index.js
+   ```
 
 5. Abre el cliente en tu navegador:
-```bash
-http://localhost:3000
+   ```
+   http://localhost:3000
+   ```
+
+## 📂 Estructura del proyecto
+
 ```
-
-📂 Estructura del proyecto
-
-```bash
-e-shop/
+invitate/
 ├── client/               # Frontend
 │   ├── css/
 │   │   └── main.css      # Estilos principales
@@ -70,34 +70,30 @@ e-shop/
 │   │   └── productos.js  # Datos de productos
 │   ├── carrito.html      # Página del carrito
 │   └── index.html        # Página principal
-└── server/              # Backend
+└── server/               # Backend
     ├── index.js          # Servidor Node.js
     └── package.json      # Dependencias
 ```
-🔑 Credenciales de prueba
-Para modo desarrollo, usa credenciales de prueba de MercadoPago.
 
-Public key: TEST-xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx
+## 🔑 Credenciales de prueba
 
-Access token: TEST-xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Para modo desarrollo, usa las credenciales de prueba de MercadoPago:
 
-📝 Notas importantes
-SDK MercadoPago se carga dinámicamente
+- **Public key:** `TEST-xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx`
+- **Access token:** `TEST-xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx`
 
-Datos persisten en localStorage
+## 📝 Notas importantes
+- El SDK de MercadoPago se carga dinámicamente.
+- Los datos del carrito persisten en `localStorage`.
+- El botón de pago se actualiza automáticamente según el carrito.
+- **No uses credenciales reales en modo desarrollo.**
 
-Botón se actualiza automáticamente
-
-No uses credenciales reales en desarrollo
-
-📄 Licencia
+## 📄 Licencia
 
 MIT License
 
-✉️ Contacto
+## ✉️ Contacto
 
-📧 Email: gdmlevin@gmail.com
-
-💼 LinkedIn: https://www.linkedin.com/in/martinezlevin/
-
-🐱 GitHub: martinezlevin
+- 📧 Email: gdmlevin@gmail.com  
+- 💼 LinkedIn: [https://www.linkedin.com/in/martinezlevin/](https://www.linkedin.com/in/martinezlevin/)  
+- 🐱 GitHub: [martinezlevin](https://github.com/martinezlevin)
