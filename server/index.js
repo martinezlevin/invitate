@@ -23,7 +23,7 @@ app.use(express.static(path.join(__dirname, "../client")));
 // Ruta para crear preferencia de pago
 app.post("/create_preference", async (req, res) => {
   try {
-    const { products } = req.body;
+    const { products, back_urls, auto_return } = req.body;
 
     // Validar que hay productos
     if (!products || products.length === 0) {
@@ -42,16 +42,16 @@ app.post("/create_preference", async (req, res) => {
     const body = {
       items,
       back_urls: {
-        success: "http://localhost:3000/success",
-        failure: "http://localhost:3000/failure",
-        pending: "http://localhost:3000/pending",
+        success: back_urls?.success || "https://guillemartinez.netlify.app/",
+        failure: back_urls?.failure || "https://guillemartinez.netlify.app/",
+        pending: back_urls?.pending || "https://guillemartinez.netlify.app/",
       },
-      auto_return: "approved",
+      auto_return: auto_return || "approved",
     };
 
     const preference = new Preference(client);
     const result = await preference.create({ body });
-    
+
     res.json({ id: result.id });
   } catch (error) {
     console.error("Error al crear preferencia:", error);

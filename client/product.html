@@ -25,6 +25,7 @@
   <title>INVITATE</title>
 
   <!-- CSS-->
+  <link rel="stylesheet" type="text/css" href="css/product.css">
   <link rel="stylesheet" type="text/css" href="css/style.css">
   <link rel="stylesheet" type="text/css" href="css/vendor.css">
   <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
@@ -44,7 +45,9 @@
   <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&family=Marcellus&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Love+Light&display=swap" rel="stylesheet">
 
-  
+  <!--  Toastify JS -->
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css" />
+
 </head>
 
 <body class="homepage">
@@ -69,9 +72,8 @@
       </div>
     </div>
   </div>
-  
-    
 </div>
+
 
 <!-- FLECHAS -->
   <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
@@ -401,577 +403,52 @@
 </nav>
 <!-- FIN DEL NAV  -->
 
-<!-- SECTIONS -->
-  <section id="billboard" class="bg-light py-5">
-    <div class="container">
-      <div class="row justify-content-center">
-        <h1 class="section-title text-center mt-4" data-aos="fade-up">Invitaciones digitales especiales<span class="love-light-regular"> para ti</span> <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-          width="50px" height="50px" viewBox="0 0 1200 1200" enable-background="new 0 0 1200 1200" xml:space="preserve">
-  <g>
-    <path fill="#B46668" d="M1147.164,155.41c-3.569-25.181-14.206-50.82-39.144-61.199c-26.17-10.892-59.073-1.939-85.003,5.915
-      c-29.776,9.02-58.239,22.507-84.994,38.289c-1.734,1.022-3.451,2.078-5.175,3.118c-1.332,0.369-2.66,0.747-3.978,1.148
-      c-54.638,16.59-100.231,55.18-141.675,93.023c-81.991,74.868-150.063,164.798-200.308,263.768
-      c-44.895-77.605-98.715-150.006-160.255-215.267c-29.042-30.8-59.734-61.777-93.216-88.538
-      c-12.232-13.849-24.871-27.319-38.161-40.135c-21.36-20.597-44.434-39.633-69.232-55.965
-      c-22.149-14.588-50.979-34.728-77.675-19.168c-24.04,14.012-33.814,46.873-41.778,71.631c-1.825,5.676-3.462,11.406-5.001,17.163
-      C78.774,191.23,63.084,220.988,55.546,251.5c-14.238,57.632,0.876,116.827,23.394,170.217
-      c22.717,53.862,51.074,105.745,79.696,156.662C187.653,630,218.682,680.506,252.1,729.401
-      c67.517,98.783,144.898,191.018,233.884,271.085c21.327,25.11,42.787,50.109,64.307,75.052c0.258,6.213,5.322,11.426,11.61,13.59
-      c8.848,10.333,17.749,20.62,26.765,30.808c13.971,15.785,36.701-7.285,23.055-23.056c-6.491-7.503-12.979-15.009-19.469-22.514
-      c49.794-45.439,92.493-97.458,131.885-152.034c145.592-153.643,301.621-301.129,381.127-501.501
-      c22.584-56.915,37.672-116.744,42.72-177.838C1150.372,214.09,1151.245,184.198,1147.164,155.41z M269.188,189.686
-      c-11.318-2.658-23.011-4.323-34.736-4.861c-2.699-1.68-5.382-3.386-8.095-5.045c-6.813-4.165-18.9-2.178-22.305,5.849
-      c-0.067,0.158-0.125,0.318-0.192,0.475c-31.406,4.248-60.734,17.883-80.85,43.905c1.752-14.555,4.324-29.021,7.771-43.346
-      C173.332,151.048,222.998,162.27,269.188,189.686z M1054.037,329.303c-15.286,26.836-30.9,53.482-46.807,79.954
-      c-64.586,107.483-133.953,212.022-205.717,314.826c-75.907,108.739-154.509,215.556-233.265,322.24
-      c-9.667-11.549-19.226-23.185-28.673-34.911c0.354-4.033-1.128-8.249-5.325-11.827c-4.42-3.769-8.796-7.581-13.157-11.406
-      c-55.346-70.447-106.77-143.94-153.897-220.206c-67.937-109.944-132.78-227.265-154.805-356.184
-      c-11.023-64.522-8.631-132.008,13.646-193.804c75.324,47.741,144.938,103.909,207.462,167.58c1.114,1.135,2.208,2.29,3.317,3.428
-      c58.849,88.925,112.137,181.524,165.299,273.924c10.462,18.183,38.646,1.781,28.154-16.456c-3.377-5.869-6.755-11.74-10.134-17.609
-      c0.223-0.124,0.454-0.227,0.674-0.359c8.425,7.338,23.451,6.774,26.033-7.093c20.969-112.592,93.501-205.552,161.488-294.296
-      c31.843-41.565,65.161-82.587,104.434-117.432c16.471-14.614,35.251-29.219,55.471-41.42c21.627-2.014,43.347,1.246,63.158,12.526
-      c38.505,21.922,50.251,68.644,44.594,110.317C1068.769,303.948,1061.253,316.635,1054.037,329.303z M667.793,405.325
-      c31.869-42.602,56.182-68.211,118.389-103.009c-31.451,39.926-61.833,80.987-89.561,123.358
-      c-27.285,41.694-51.207,86.042-67.076,133.222C609.454,485.354,641.658,440.262,667.793,405.325z M134.434,279.809
-      c8.499-31.041,30.076-49.043,56.232-57.153c-35.09,116.046,40.333,406.609,75.483,435.211
-      c-111.29-90.556-114.793-252.897-125.12-286.444C131.923,341.845,126.093,310.276,134.434,279.809z M1071.72,170.639
-      c-13.08-12.899-28.781-21.977-45.729-27.701c7.703-2.035,15.478-3.58,23.309-4.398c25.416-2.652,46.548,8.468,55.655,32.727
-      c7.157,19.062,5.414,39.167-0.316,58.201C1098.932,207.463,1088.293,186.983,1071.72,170.639z M159.049,113.671
-      c10.53-12.151,66.973-14.105,95.883,37.356c-25.523-5.48-84.676-19.554-110.151-9.763
-      C148.319,131.498,152.419,121.322,159.049,113.671z M94.874,230.009c-0.473,46.793,10.078,149.14,17.95,190.175
-      C55.089,346.986,69.893,244.234,94.874,230.009z M887.428,700.998c-30.149,33.823-43.496,62.946-56.973,62.946
-      c63.224-96.739,126.407-193.504,189.61-290.257c30.649-46.918,74.051-162.603,82.005-149.485
-      c-7.277,29.967-16.919,59.389-28.247,87.96C1031.271,519.488,963.796,615.323,887.428,700.998z"/>
-  </g>
-  </svg></h1>
 
-        <div class="col-md-6 text-center" data-aos="fade-up" data-aos-delay="300">
-          <p>¡El gran día está por llegar! <br>
-            Escoge la categoría que más se adapte a la ocasión que estás buscando.</p>
+<!-- PRODUCT SECTION -->
+<section class="py-5">
+    <div class="container px-4 px-lg-5 my-5">
+        <div class="row gx-4 gx-lg-5 align-items-center">
+            <div class="col-md-6">
+                <img 
+                    class="card-img-top mb-5 mb-md-0" 
+                    src="" 
+                    alt="Shop item image"
+                    id="productoImagen"
+                />
+            </div>
+            <div class="col-md-6">
+                <h1 class="display-5 fw-bolder" id="productoTitulo">Cargando...</h1>
+                <div class="fs-5 mb-5">
+                    <span class="text-decoration-line-through" id="productoPrecioViejo"></span>
+                    <span id="productoPrecio">$0</span>
+                </div>
+                <p class="lead" id="productoDescripcion">Descripción no disponible</p>
+                <div class="d-flex">
+                    <input 
+                        class="form-control text-center me-3" 
+                        id="inputQuantity" 
+                        type="number" 
+                        value="1" 
+                        min="1" 
+                        style="max-width: 3rem" 
+                    />
+                    <button 
+                        class="btn btn-outline-dark rounded-pill flex-shrink-0 border-2 agregar-al-carrito"
+                        type="button"
+                        id="botonAgregarCarrito"
+                    >
+                        <i class="bi-cart-fill me-1"></i>
+                        AGREGAR AL CARRITO
+                    </button>
+                </div>
+            </div>
         </div>
-      </div>
-      <div class="row">
-        <div class="swiper main-swiper py-4" data-aos="fade-up" data-aos-delay="600"> 
-          <div class="swiper-wrapper d-flex border-animation-left">
-            <div class="swiper-slide">
-              <div class="banner-item image-zoom-effect">
-                <div class="image-holder">
-                  <a href="#">
-                    <img src="images/banner-image-8.png" alt="product" class="img-fluid">
-                  </a>
-                  <div class="overlay">
-                    <span class="overlay-text dancing-script">Boy or Girl</span>
-                  </div>
-                </div>
-                <div class="banner-content py-4">
-                  <h5 class="element-title text-uppercase">
-                    <a href="menu.html" class="item-anchor text-decoration-none">Revelación de género</a>
-                  </h5>
-                  <p>Celebra el emocionante anuncio con diseños modernos y personalizados que capturan la esencia de este momento único.</p>
-                  <div class="btn-left">
-                    <a href="menu.html" class="fs-6 text-uppercase item-anchor text-decoration-none">Conoce más</a>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <div class="banner-item image-zoom-effect">
-                <div class="image-holder">
-                  <a href="#">
-                    <img src="images/banner-image-1.png" alt="product" class="img-fluid">
-                  </a>
-                  <div class="overlay">
-                    <span class="overlay-text dancing-script">Bodas</span>
-                  </div>
-                </div>
-                <div class="banner-content py-4">
-                  <h5 class="element-title text-uppercase">
-                    <a href="menu.html" class="item-anchor text-decoration-none">Bodas por civil</a>
-                  </h5>
-                  <p>Conmemora tu unión legal con elegancia. Diseños sobrios y sofisticados que reflejan la importancia de este compromiso.</p>
-                  <div class="btn-left">
-                    <a href="menu.html" class="fs-6 text-uppercase item-anchor text-decoration-none">Conoce más</a>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <div class="banner-item image-zoom-effect">
-                <div class="image-holder">
-                  <a href="#">
-                    <img src="images/banner-image-2.png" alt="product" class="img-fluid">
-                  </a>
-                  <div class="overlay">
-                    <span class="overlay-text dancing-script">Iglesia</span>
-                  </div>
-                </div>
-                <div class="banner-content py-4">
-                  <h5 class="element-title text-uppercase">
-                    <a href="menu.html" class="item-anchor text-decoration-none">Bodas por iglesia</a>
-                  </h5>
-                  <p>Refleja la solemnidad y belleza de tu ceremonia religiosa con estilos clásicos que evocan tradición y amor eterno.</p>
-                  <div class="btn-left">
-                    <a href="menu.html" class="fs-6 text-uppercase item-anchor text-decoration-none">Conoce más</a>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <div class="banner-item image-zoom-effect">
-                <div class="image-holder">
-                  <a href="#">
-                    <img src="images/banner-image-3.png" alt="product" class="img-fluid">
-                  </a>
-                  <div class="overlay">
-                    <span class="overlay-text dancing-script">XV años</span>
-                  </div>
-                </div>
-                <div class="banner-content py-4">
-                  <h5 class="element-title text-uppercase">
-                    <a href="menu.html" class="item-anchor text-decoration-none">XV años</a>
-                  </h5>
-                  <p>Celebra tus quince años con diseños vibrantes que reflejan tu personalidad única y el paso a una nueva etapa llena de aventuras.</p>
-                  <div class="btn-left">
-                    <a href="menu.html" class="fs-6 text-uppercase item-anchor text-decoration-none">Conoce más</a>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <div class="banner-item image-zoom-effect">
-                <div class="image-holder">
-                  <a href="#">
-                    <img src="images/banner-image-4.png" alt="product" class="img-fluid">
-                  </a>
-                  <div class="overlay">
-                    <span class="overlay-text dancing-script">Graduación</span>
-                  </div>
-                </div>
-                <div class="banner-content py-4">
-                  <h5 class="element-title text-uppercase">
-                    <a href="menu.html" class="item-anchor text-decoration-none">Graduación</a>
-                  </h5>
-                  <p>Conmemora tu logro académico con diseños que destacan tu esfuerzo y marcan el inicio de una nueva etapa llena de oportunidades.</p>
-                  <div class="btn-left">
-                    <a href="menu.html" class="fs-6 text-uppercase item-anchor text-decoration-none">Conoce más</a>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <div class="banner-item image-zoom-effect">
-                <div class="image-holder">
-                  <a href="#">
-                    <img src="images/banner-image-7.png" alt="product" class="img-fluid">
-                  </a>
-                  <div class="overlay">
-                    <span class="overlay-text dancing-script">Infantil</span>
-                  </div>
-                </div>
-                <div class="banner-content py-4">
-                  <h5 class="element-title text-uppercase">
-                    <a href="menu.html" class="item-anchor text-decoration-none">Cumpleaños infantiles</a>
-                  </h5>
-                  <p>Organiza una fiesta divertida con diseños coloridos y temáticos que cautivarán a los más pequeños y harán su día aún más especial.</p>
-                  <div class="btn-left">
-                    <a href="menu.html" class="fs-6 text-uppercase item-anchor text-decoration-none">Conoce más</a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="swiper-pagination"></div>
-      </div>
-  </section>
-  <div class="icon-arrow icon-arrow-left"><svg width="50" height="50" viewBox="0 0 24 24">
-    <use xlink:href="#arrow-left"></use>
-  </svg></div>
-<div class="icon-arrow icon-arrow-right"><svg width="50" height="50" viewBox="0 0 24 24">
-    <use xlink:href="#arrow-right"></use>
-  </svg></div>
-
-
-
-
-  <section class="features py-5">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-3 text-center" data-aos="fade-in" data-aos-delay="0">
-          <div class="py-5">
-            <svg xmlns="http://www.w3.org/2000/svg" width="38" height="38" fill="currentColor" class="bi bi-clock-history" viewBox="0 0 16 16">
-              <path d="M8.515 1.019A7 7 0 0 0 8 1V0a8 8 0 0 1 .589.022zm2.004.45a7 7 0 0 0-.985-.299l.219-.976q.576.129 1.126.342zm1.37.71a7 7 0 0 0-.439-.27l.493-.87a8 8 0 0 1 .979.654l-.615.789a7 7 0 0 0-.418-.302zm1.834 1.79a7 7 0 0 0-.653-.796l.724-.69q.406.429.747.91zm.744 1.352a7 7 0 0 0-.214-.468l.893-.45a8 8 0 0 1 .45 1.088l-.95.313a7 7 0 0 0-.179-.483m.53 2.507a7 7 0 0 0-.1-1.025l.985-.17q.1.58.116 1.17zm-.131 1.538q.05-.254.081-.51l.993.123a8 8 0 0 1-.23 1.155l-.964-.267q.069-.247.12-.501m-.952 2.379q.276-.436.486-.908l.914.405q-.24.54-.555 1.038zm-.964 1.205q.183-.183.35-.378l.758.653a8 8 0 0 1-.401.432z"/>
-              <path d="M8 1a7 7 0 1 0 4.95 11.95l.707.707A8.001 8.001 0 1 1 8 0z"/>
-              <path d="M7.5 3a.5.5 0 0 1 .5.5v5.21l3.248 1.856a.5.5 0 0 1-.496.868l-3.5-2A.5.5 0 0 1 7 9V3.5a.5.5 0 0 1 .5-.5"/>
-            </svg>
-            <h4 class="element-title text-capitalize my-3">Entrega rápida</h4>
-            <p>Recibe tus invitaciones en menos de una semana.</p>
-          </div>
-        </div>
-        <div class="col-md-3 text-center" data-aos="fade-in" data-aos-delay="300">
-          <div class="py-5">
-            <svg xmlns="http://www.w3.org/2000/svg" width="38" height="38" fill="currentColor" class="bi bi-shield-shaded" viewBox="0 0 16 16">
-              <path fill-rule="evenodd" d="M8 14.933a1 1 0 0 0 .1-.025q.114-.034.294-.118c.24-.113.547-.29.893-.533a10.7 10.7 0 0 0 2.287-2.233c1.527-1.997 2.807-5.031 2.253-9.188a.48.48 0 0 0-.328-.39c-.651-.213-1.75-.56-2.837-.855C9.552 1.29 8.531 1.067 8 1.067zM5.072.56C6.157.265 7.31 0 8 0s1.843.265 2.928.56c1.11.3 2.229.655 2.887.87a1.54 1.54 0 0 1 1.044 1.262c.596 4.477-.787 7.795-2.465 9.99a11.8 11.8 0 0 1-2.517 2.453 7 7 0 0 1-1.048.625c-.28.132-.581.24-.829.24s-.548-.108-.829-.24a7 7 0 0 1-1.048-.625 11.8 11.8 0 0 1-2.517-2.453C1.928 10.487.545 7.169 1.141 2.692A1.54 1.54 0 0 1 2.185 1.43 63 63 0 0 1 5.072.56"/>
-            </svg>
-            <h4 class="element-title text-capitalize my-3">Compra protegida</h4>
-            <p>Tu tranquilidad es nuestra prioridad en cada pago.</p>
-          </div>
-        </div>
-        <div class="col-md-3 text-center" data-aos="fade-in" data-aos-delay="600">
-          <div class="py-5">
-            <svg xmlns="http://www.w3.org/2000/svg" width="38" height="38" fill="currentColor" class="bi bi-credit-card-fill" viewBox="0 0 16 16">
-              <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v1H0zm0 3v5a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7zm3 2h1a1 1 0 0 1 1 1v1a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1v-1a1 1 0 0 1 1-1"/>
-            </svg>
-            <h4 class="element-title text-capitalize my-3">Pago online</h4>
-            <p>Opciones de pago seguras y convenientes disponibles.</p>
-          </div>
-        </div>
-        <div class="col-md-3 text-center" data-aos="fade-in" data-aos-delay="900">
-          <div class="py-5">
-            <svg xmlns="http://www.w3.org/2000/svg" width="38" height="38" fill="currentColor" class="bi bi-globe-americas" viewBox="0 0 16 16">
-              <path d="M8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0M2.04 4.326c.325 1.329 2.532 2.54 3.717 3.19.48.263.793.434.743.484q-.121.12-.242.234c-.416.396-.787.749-.758 1.266.035.634.618.824 1.214 1.017.577.188 1.168.38 1.286.983.082.417-.075.988-.22 1.52-.215.782-.406 1.48.22 1.48 1.5-.5 3.798-3.186 4-5 .138-1.243-2-2-3.5-2.5-.478-.16-.755.081-.99.284-.172.15-.322.279-.51.216-.445-.148-2.5-2-1.5-2.5.78-.39.952-.171 1.227.182.078.099.163.208.273.318.609.304.662-.132.723-.633.039-.322.081-.671.277-.867.434-.434 1.265-.791 2.028-1.12.712-.306 1.365-.587 1.579-.88A7 7 0 1 1 2.04 4.327Z"/>
-            </svg>
-            <h4 class="element-title text-capitalize my-3">Internacional</h4>
-            <p>Realiza tu compra desde cualquier parte del mundo.</p>
-          </div>
-        </div>
-      </div>
     </div>
-  </section>
+</section>
 
-  <section class="categories overflow-hidden">
-    <div class="container">
-      <div class="open-up" data-aos="zoom-out">
-        <div class="row">
-          <div class="col-md-4">
-            <div class="cat-item image-zoom-effect">
-              <div class="image-holder">
-                <a href="menu.html">
-                  <img src="images/cat-item.jpg" alt="categories" class="product-image img-fluid">
-                </a>
-              </div>
-              <div class="category-content">
-                <div class="product-button">
-                  <a href="menu.html" class="btn btn-common text-uppercase">Haz tu boda especial</a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="cat-item image-zoom-effect">
-              <div class="image-holder">
-                <a href="menu.html">
-                  <img src="images/cat-item.jpg" alt="categories" class="product-image img-fluid">
-                </a>
-              </div>
-              <div class="category-content">
-                <div class="product-button">
-                  <a href="menu.html" class="btn btn-common text-uppercase">Que tu fiesta brille</a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="cat-item image-zoom-effect">
-              <div class="image-holder">
-                <a href="menu.html">
-                  <img src="images/cat-item.jpg" alt="categories" class="product-image img-fluid">
-                </a>
-              </div>
-              <div class="category-content">
-                <div class="product-button">
-                  <a href="menu.html" class="btn btn-common text-uppercase">Los XV años son irrepetibles</a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
+  <!-- SECTION -->
 
-  <section id="new-arrival" class="new-arrival product-carousel py-5 position-relative overflow-hidden">
-    <div class="container">
-      <div class="d-flex flex-wrap justify-content-between align-items-center mt-5 mb-3">
-        <h4 class="text-uppercase">Nuestras nuevas invitaciones</h4>
-        <a href="menu.html" class="btn-link text-decoration-none">Ver todas las invitaciones</a>
-      </div>
-      <div class="swiper product-swiper open-up" data-aos="zoom-out">
-        <div class="swiper-wrapper d-flex">
-          <div class="swiper-slide">
-            <div class="product-item image-zoom-effect link-effect">
-              <div class="image-holder position-relative">
-                <a href="menu.html">
-                  <img src="images/product-item.jpg" alt="categories" class="product-image img-fluid">
-                </a>
-                <div class="product-content">
-                  <h5 class="element-title text-uppercase fs-5 mt-3">
-                    <a href="menu.html">Invitación para boda</a>
-                  </h5>
-                  <a href="menu.html" class="text-decoration-none" data-after="Conoce más"><span>$30.000 AR | $30 (USD)</span></a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="swiper-slide">
-            <div class="product-item image-zoom-effect link-effect">
-              <div class="image-holder position-relative">
-                <a href="menu.html">
-                  <img src="images/product-item.jpg" alt="categories" class="product-image img-fluid">
-                </a>
-                <div class="product-content">
-                  <h5 class="text-uppercase fs-5 mt-3">
-                    <a href="menu.html">Invitación para boda</a>
-                  </h5>
-                  <a href="menu.html" class="text-decoration-none" data-after="Conoce más"><span>$30.000 AR | $30 (USD)</span></a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="swiper-slide">
-            <div class="product-item image-zoom-effect link-effect">
-              <div class="image-holder position-relative">
-                <a href="menu.html">
-                  <img src="images/product-item.jpg" alt="categories" class="product-image img-fluid">
-                </a>
-                <div class="product-content">
-                  <h5 class="text-uppercase fs-5 mt-3">
-                    <a href="menu.html">Invitación para boda</a>
-                  </h5>
-                  <a href="menu.html" class="text-decoration-none" data-after="Conoce más"><span>$30.000 AR | $30 (USD)</span></a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="swiper-slide">
-            <div class="product-item image-zoom-effect link-effect">
-              <div class="image-holder position-relative">
-                <a href="menu.html">
-                  <img src="images/product-item.jpg" alt="categories" class="product-image img-fluid">
-                </a>
-                <div class="product-content">
-                  <h5 class="text-uppercase fs-5 mt-3">
-                    <a href="menu.html">Invitación para boda</a>
-                  </h5>
-                  <a href="menu.html" class="text-decoration-none" data-after="Conoce más"><span>$30.000 AR | $30 (USD)</span></a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="swiper-slide">
-            <div class="product-item image-zoom-effect link-effect">
-              <div class="image-holder position-relative">
-                <a href="menu.html">
-                  <img src="images/product-item.jpg" alt="categories" class="product-image img-fluid">
-                </a>
-                <div class="product-content">
-                  <h5 class="text-uppercase fs-5 mt-3">
-                    <a href="menu.html">Invitación para boda</a>
-                  </h5>
-                  <a href="menu.html" class="text-decoration-none" data-after="Conoce más"><span>$30.000 AR | $30 (USD)</span></a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="swiper-pagination"></div>
-      </div>
-      <div class="icon-arrow icon-arrow-left"><svg width="50" height="50" viewBox="0 0 24 24">
-          <use xlink:href="#arrow-left"></use>
-        </svg></div>
-      <div class="icon-arrow icon-arrow-right"><svg width="50" height="50" viewBox="0 0 24 24">
-          <use xlink:href="#arrow-right"></use>
-        </svg></div>
-    </div>
-  </section>
-
-  <section class="collection bg-light position-relative py-5">
-    <div class="container">
-      <div class="row">
-        <div class="title-xlarge text-uppercase txt-fx domino"></div>
-        <div class="collection-item d-flex flex-wrap my-5">
-          <div class="col-md-6 column-container">
-            <div class="image-holder">
-              <img src="images/single-image.jpg" alt="collection" class="product-image img-fluid">
-            </div>
-          </div>
-          <div class="col-md-6 column-container bg-white">
-            <div class="collection-content p-5 m-0 m-md-5">
-              <h3 class="element-title text-uppercase">Disponible para todos tus equipos</h3>
-              <p>Nuestras invitaciones digitales son diseñadas para adaptarse automáticamente a cualquier dispositivo. Ya sea que se vean en un celular, tablet o computadora, siempre tendrán una excelente apariencia. No importa el tamaño de la pantalla, cada invitación se ajusta perfectamente para ofrecer una experiencia visual increíble, cómoda y accesible para todos.</p>
-              <a href="menu.html" class="btn btn-dark text-uppercase mt-3">Adquiera su invitación</a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section id="best-sellers" class="best-sellers product-carousel py-5 position-relative overflow-hidden">
-    <div class="container">
-      <div class="d-flex flex-wrap justify-content-between align-items-center mt-5 mb-3">
-        <h4 class="text-uppercase">Las más compradas</h4>
-        <a href="menu.html" class="btn-link text-decoration-none">Ver todas las invitaciones</a>
-      </div>
-      <div class="swiper product-swiper open-up" data-aos="zoom-out">
-        <div class="swiper-wrapper d-flex">
-          <div class="swiper-slide">
-            <div class="product-item image-zoom-effect link-effect">
-              <div class="image-holder">
-                <a href="menu.html">
-                  <img src="images/product-item.jpg" alt="categories" class="product-image img-fluid">
-                </a>
-                <div class="product-content">
-                  <h5 class="text-uppercase fs-5 mt-3">
-                    <a href="menu.html">Invitación para boda</a>
-                  </h5>
-                  <a href="menu.html" class="text-decoration-none" data-after="Conoce más"><span>$30.000 AR | $30 (USD)</span></a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="swiper-slide">
-            <div class="product-item image-zoom-effect link-effect">
-              <div class="image-holder">
-                <a href="menu.html">
-                  <img src="images/product-item.jpg" alt="product" class="product-image img-fluid">
-                </a>
-                <div class="product-content">
-                  <h5 class="text-uppercase fs-5 mt-3">
-                    <a href="menu.html">Invitación para boda</a>
-                  </h5>
-                  <a href="menu.html" class="text-decoration-none" data-after="Conoce más"><span>$30.000 AR | $30 (USD)</span></a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="swiper-slide">
-            <div class="product-item image-zoom-effect link-effect">
-              <div class="image-holder">
-                <a href="menu.html">
-                  <img src="images/product-item.jpg" alt="categories" class="product-image img-fluid">
-                </a>
-                <div class="product-content">
-                  <h5 class="text-uppercase fs-5 mt-3">
-                    <a href="menu.html">Invitación para boda</a>
-                  </h5>
-                  <a href="menu.html" class="text-decoration-none" data-after="Conoce más"><span>$30.000 AR | $30 (USD)</span></a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="swiper-slide">
-            <div class="product-item image-zoom-effect link-effect">
-              <div class="image-holder">
-                <a href="menu.html">
-                  <img src="images/product-item.jpg" alt="categories" class="product-image img-fluid">
-                </a>
-                <div class="product-content">
-                  <h5 class="text-uppercase fs-5 mt-3">
-                    <a href="menu.html">Invitación para boda</a>
-                  </h5>
-                  <a href="menu.html" class="text-decoration-none" data-after="Conoce más"><span>$30.000 AR | $30 (USD)</span></a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="swiper-slide">
-            <div class="product-item image-zoom-effect link-effect">
-              <div class="image-holder">
-                <a href="menu.html">
-                  <img src="images/product-item.jpg" alt="categories" class="product-image img-fluid">
-                </a>
-                <div class="product-content">
-                  <h5 class="text-uppercase fs-5 mt-3">
-                    <a href="menu.html">Invitación para boda</a>
-                  </h5>
-                  <a href="menu.html" class="text-decoration-none" data-after="Conoce más"><span>$30.000 AR | $30 (USD)</span></a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="swiper-slide">
-            <div class="product-item image-zoom-effect link-effect">
-              <div class="image-holder">
-                <a href="menu.html">
-                  <img src="images/product-item.jpg" alt="categories" class="product-image img-fluid">
-                </a>
-                <div class="product-content">
-                  <h5 class="text-uppercase fs-5 mt-3">
-                    <a href="menu.html">Invitación para boda</a>
-                  </h5>
-                  <a href="menu.html" class="text-decoration-none" data-after="Conoce más"><span>$30.000 AR | $30 (USD)</span></a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="swiper-pagination"></div>
-      </div>
-      <div class="icon-arrow icon-arrow-left"><svg width="50" height="50" viewBox="0 0 24 24">
-          <use xlink:href="#arrow-left"></use>
-        </svg></div>
-      <div class="icon-arrow icon-arrow-right"><svg width="50" height="50" viewBox="0 0 24 24">
-          <use xlink:href="#arrow-right"></use>
-        </svg></div>
-    </div>
-  </section>
-
-  <section class="video py-5 overflow-hidden">
-    <div class="container-fluid">
-      <div class="row">
-        <div class="video-content open-up" data-aos="zoom-out">
-          <div class="video-bg">
-            <img src="images/video-image.jpg" alt="video" class="video-image img-fluid">
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="testimonials py-5 bg-light">
-    <div class="section-header text-center mt-5">
-      <h3 class="section-title">NOS ENCANTAN LOS BUENOS ELOGIOS</h3>
-    </div>
-    <div class="swiper testimonial-swiper overflow-hidden my-5">
-      <div class="swiper-wrapper d-flex">
-        <div class="swiper-slide">
-          <div class="testimonial-item text-center">
-            <blockquote>
-              <p>“¡Hermosa invitación! Todos me felicitaron. Súper fácil y rápida entrega.”</p>
-              <div class="review-title text-uppercase">Cliente</div>
-            </blockquote>
-          </div>
-        </div>
-        <div class="swiper-slide">
-          <div class="testimonial-item text-center">
-            <blockquote>
-              <p>“Excelente servicio, diseño precioso. Recomendado 100%. ¡Gracias por tanta dedicación!”</p>
-              <div class="review-title text-uppercase">Cliente</div>
-            </blockquote>
-          </div>
-        </div>
-        <div class="swiper-slide">
-          <div class="testimonial-item text-center">
-            <blockquote>
-              <p>“La invitación quedó perfecta. Atención rápida y muy profesional. ¡Me encantó!”</p>
-              <div class="review-title text-uppercase">Cliente</div>
-            </blockquote>
-          </div>
-        </div>
-        <div class="swiper-slide">
-          <div class="testimonial-item text-center">
-            <blockquote>
-              <p>“Súper recomendados. Cumplieron todo al detalle. Invitación soñada, ¡mil gracias!”</p>
-              <div class="review-title text-uppercase">Cliente</div>
-            </blockquote>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="testimonial-swiper-pagination d-flex justify-content-center mb-5"></div>
-  </section>
-
-  <section id="related-products" class="related-products product-carousel py-5 position-relative overflow-hidden">
+  <section id="related-products" class="related-products product-carousel py-5 position-relative overflow-hidden" style="background-color: #F1F1F0;">
     <div class="container">
       <div class="d-flex flex-wrap justify-content-between align-items-center mt-5 mb-3">
         <h4 class="text-uppercase">También te puede interesar</h4>
@@ -982,14 +459,14 @@
           <div class="swiper-slide">
             <div class="product-item image-zoom-effect link-effect">
               <div class="image-holder">
-                <a href="menu.html">
+                <a href="index.html">
                   <img src="images/product-item.jpg" alt="product" class="product-image img-fluid">
                 </a>
                 <div class="product-content">
                   <h5 class="text-uppercase fs-5 mt-3">
-                    <a href="menu.html">Invitación para boda</a>
+                    <a href="index.html">Invitación para boda</a>
                   </h5>
-                  <a href="menu.html" class="text-decoration-none" data-after="Conoce más"><span>$30.000 AR | $30 (USD)</span></a>
+                  <a href="index.html" class="text-decoration-none" data-after="Conoce más"><span>$30.000 AR | $30 (USD)</span></a>
                 </div>
               </div>
             </div>
@@ -997,14 +474,14 @@
           <div class="swiper-slide">
             <div class="product-item image-zoom-effect link-effect">
               <div class="image-holder">
-                <a href="menu.html">
+                <a href="index.html">
                   <img src="images/product-item.jpg" alt="product" class="product-image img-fluid">
                 </a>
                 <div class="product-content">
                   <h5 class="text-uppercase fs-5 mt-3">
-                    <a href="menu.html">Invitación para boda</a>
+                    <a href="index.html">Invitación para boda</a>
                   </h5>
-                  <a href="menu.html" class="text-decoration-none" data-after="Conoce más"><span>$30.000 AR | $30 (USD)</span></a>
+                  <a href="index.html" class="text-decoration-none" data-after="Conoce más"><span>$30.000 AR | $30 (USD)</span></a>
                 </div>
               </div>
             </div>
@@ -1012,14 +489,14 @@
           <div class="swiper-slide">
             <div class="product-item image-zoom-effect link-effect">
               <div class="image-holder">
-                <a href="menu.html">
+                <a href="index.html">
                   <img src="images/product-item.jpg" alt="product" class="product-image img-fluid">
                 </a>
                 <div class="product-content">
                   <h5 class="text-uppercase fs-5 mt-3">
-                    <a href="menu.html">Invitación para boda</a>
+                    <a href="index.html">Invitación para boda</a>
                   </h5>
-                  <a href="menu.html" class="text-decoration-none" data-after="Conoce más"><span>$30.000 AR | $30 (USD)</span></a>
+                  <a href="index.html" class="text-decoration-none" data-after="Conoce más"><span>$30.000 AR | $30 (USD)</span></a>
                 </div>
               </div>
             </div>
@@ -1027,14 +504,14 @@
           <div class="swiper-slide">
             <div class="product-item image-zoom-effect link-effect">
               <div class="image-holder">
-                <a href="menu.html">
+                <a href="index.html">
                   <img src="images/product-item.jpg" alt="product" class="product-image img-fluid">
                 </a>
                 <div class="product-content">
                   <h5 class="text-uppercase fs-5 mt-3">
-                    <a href="menu.html">Invitación para boda</a>
+                    <a href="index.html">Invitación para boda</a>
                   </h5>
-                  <a href="menu.html" class="text-decoration-none" data-after="Conoce más"><span>$30.000 AR | $30 (USD)</span></a>
+                  <a href="index.html" class="text-decoration-none" data-after="Conoce más"><span>$30.000 AR | $30 (USD)</span></a>
                 </div>
               </div>
             </div>
@@ -1042,14 +519,14 @@
           <div class="swiper-slide">
             <div class="product-item image-zoom-effect link-effect">
               <div class="image-holder">
-                <a href="menu.html">
+                <a href="index.html">
                   <img src="images/product-item.jpg" alt="product" class="product-image img-fluid">
                 </a>
                 <div class="product-content">
                   <h5 class="text-uppercase fs-5 mt-3">
-                    <a href="menu.html">Invitación para boda</a>
+                    <a href="index.html">Invitación para boda</a>
                   </h5>
-                  <a href="menu.html" class="text-decoration-none" data-after="Conoce más"><span>$30.000 AR | $30 (USD)</span></a>
+                  <a href="index.html" class="text-decoration-none" data-after="Conoce más"><span>$30.000 AR | $30 (USD)</span></a>
                 </div>
               </div>
             </div>
@@ -1067,169 +544,6 @@
   </section>
   <!-- FIN DE FLECHAS -->
 
-  <section class="blog py-5">
-    <div class="container">
-      <div class="d-flex flex-wrap justify-content-between align-items-center mt-5 mb-3">
-        <h4 class="text-uppercase">Descubre nuestras invitaciones de muestra</h4>
-        <a href="menu.html" class="btn-link text-decoration-none">Ver todas</a>
-      </div>
-      <div class="row">
-        <div class="col-md-4">
-          <article class="post-item">
-            <div class="post-image">
-              <a href="menu.html">
-                <img src="images/post-image.jpg" alt="image" class="post-grid-image img-fluid">
-              </a>
-            </div>
-            <div class="post-content d-flex flex-wrap gap-2 my-3">
-              <div class="post-meta text-uppercase fs-6 text-secondary">
-                <span class="post-category">Presentación /</span>
-                <span class="meta-day"> Temática Glamour Nocturno</span>
-              </div>
-              <h5 class="post-title text-uppercase">
-                <a href="menu.html">Invitación para boda</a>
-              </h5>
-              <p>Invitación de boda digital, elegante, fácil de usar y visible desde cualquier celular.</p>
-            </div>
-          </article>
-        </div>
-        <div class="col-md-4">
-          <article class="post-item">
-            <div class="post-image">
-              <a href="menu.html">
-                <img src="images/post-image.jpg" alt="image" class="post-grid-image img-fluid">
-              </a>
-            </div>
-            <div class="post-content d-flex flex-wrap gap-2 my-3">
-              <div class="post-meta text-uppercase fs-6 text-secondary">
-                <span class="post-category">Presentación /</span>
-                <span class="meta-day"> Temática Rústica Chic </span>
-              </div>
-              <h5 class="post-title text-uppercase">
-                <a href="menu.html">Invitación para boda</a>
-              </h5>
-              <p>Invitación de boda digital, elegante, fácil de usar y visible desde cualquier celular.</p>
-            </div>
-          </article>
-        </div>
-        <div class="col-md-4">
-          <article class="post-item">
-            <div class="post-image">
-              <a href="menu.html">
-                <img src="images/post-image.jpg" alt="image" class="post-grid-image img-fluid">
-              </a>
-            </div>
-            <div class="post-content d-flex flex-wrap gap-2 my-3">
-              <div class="post-meta text-uppercase fs-6 text-secondary">
-                <span class="post-category">Presentación /</span>
-                <span class="meta-day"> Temática Rosa Floral</span>
-              </div>
-              <h5 class="post-title text-uppercase">
-                <a href="menu.html">Invitación para boda</a>
-              </h5>
-              <p>Invitación de boda digital, elegante, fácil de usar y visible desde cualquier celular.</p>
-            </div>
-          </article>
-        </div>
-      </div>
-    </div>
-  </section>
-
-<section class="logo-bar py-5 my-5">
-  <div class="logo-carousel">
-    <div class="logo-track">
-      <!-- Logos duplicados -->
-      <img src="images/logo1.png" alt="logo" class="logo-image">
-      <img src="images/logo2.png" alt="logo" class="logo-image">
-      <img src="images/logo3.png" alt="logo" class="logo-image">
-      <img src="images/logo4.png" alt="logo" class="logo-image">
-      <img src="images/logo5.png" alt="logo" class="logo-image">
-      <img src="images/logo6.png" alt="logo" class="logo-image">
-      <img src="images/logo7.png" alt="logo" class="logo-image">
-      <img src="images/logo8.png" alt="logo" class="logo-image">
-      <img src="images/logo9.png" alt="logo" class="logo-image">
-      <img src="images/logo10.png" alt="logo" class="logo-image">
-      <!-- Repetidos para efecto infinito -->
-      <img src="images/logo11.png" alt="logo" class="logo-image">
-      <img src="images/logo12.png" alt="logo" class="logo-image">
-      <img src="images/logo13.png" alt="logo" class="logo-image">
-      <img src="images/logo14.png" alt="logo" class="logo-image">
-      <img src="images/logo15.png" alt="logo" class="logo-image">
-      <img src="images/logo16.png" alt="logo" class="logo-image">
-      <img src="images/logo17.png" alt="logo" class="logo-image">
-      <img src="images/logo18.png" alt="logo" class="logo-image">
-      <img src="images/logo19.png" alt="logo" class="logo-image">
-      <img src="images/logo20.png" alt="logo" class="logo-image">
-    </div>
-  </div>
-</section>
-
-
-  <section id="newsletter" class="newsletter bg-light" style="background: url(images/pattern-bg.png) no-repeat;">
-    <div class="container">
-      <div class="row justify-content-center">
-        <div class="col-md-8 py-5 my-5">
-          <div class="subscribe-header text-center pb-3">
-            <h3 class="section-title text-uppercase">Suscríbete a nuestras newsletter</h3>
-          </div>
-          <form id="form" class="d-flex flex-wrap gap-2">
-            <input type="text" name="email" placeholder="Su dirección de correo electrónico" class="form-control form-control-lg">
-            <button class="btn btn-dark btn-lg text-uppercase w-100">Inscribirse</button>
-          </form>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="instagram position-relative">
-    <div class="d-flex justify-content-center w-100 position-absolute bottom-0 z-1">
-      <a href="#" class="btn btn-dark px-5">Síguenos en Instagram</a>
-    </div>
-    <div class="row g-0">
-      <div class="col-6 col-sm-4 col-md-2">
-        <div class="insta-item">
-          <a href="#" target="_blank">
-            <img src="images/insta-item.jpg" alt="instagram" class="insta-image img-fluid">
-          </a>
-        </div>
-      </div>
-      <div class="col-6 col-sm-4 col-md-2">
-        <div class="insta-item">
-          <a href="#" target="_blank">
-            <img src="images/insta-item.jpg" alt="instagram" class="insta-image img-fluid">
-          </a>
-        </div>
-      </div>
-      <div class="col-6 col-sm-4 col-md-2">
-        <div class="insta-item">
-          <a href="#" target="_blank">
-            <img src="images/insta-item.jpg" alt="instagram" class="insta-image img-fluid">
-          </a>
-        </div>
-      </div>
-      <div class="col-6 col-sm-4 col-md-2">
-        <div class="insta-item">
-          <a href="#" target="_blank">
-            <img src="images/insta-item.jpg" alt="instagram" class="insta-image img-fluid">
-          </a>
-        </div>
-      </div>
-      <div class="col-6 col-sm-4 col-md-2">
-        <div class="insta-item">
-          <a href="#" target="_blank">
-            <img src="images/insta-item.jpg" alt="instagram" class="insta-image img-fluid">
-          </a>
-        </div>
-      </div>
-      <div class="col-6 col-sm-4 col-md-2">
-        <div class="insta-item">
-          <a href="#" target="_blank">
-            <img src="images/insta-item.jpg" alt="instagram" class="insta-image img-fluid">
-          </a>
-        </div>
-      </div>
-    </div>
-  </section>
 
 <!-- BUTTON AUTO-SCROLL -->
 
@@ -1269,8 +583,9 @@
   </a>
 </button>
 
+
   <!-- FOOTER -->
-  <footer id="footer" class="mt-5">
+<footer id="footer" class="mt-5">
     <div class="container">
       <div class="row d-flex flex-wrap justify-content-between py-5">
         <div class="col-md-3 col-sm-6">
@@ -1370,6 +685,7 @@
     </div>
   </footer>
   <!-- FIN DEL FOOTER -->
+   
 
   <!-- SCRIPTS -->
 
@@ -1383,9 +699,13 @@
   <script src="js/script.min.js"></script>
   <script src="js/main.js"></script>
   <script src="js/menu.js"></script>
+  <script src="js/carrito.js"></script>
 
   <!-- Bootstrap 5.3.6 -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js" integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO" crossorigin="anonymous"></script>
+
+  <!-- Toastify JS -->
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
 
 </body>
 </html>

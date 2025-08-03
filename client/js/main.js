@@ -1,22 +1,41 @@
 let productos = [];
 
+// Elementos del DOM
+const contenedorProductos = document.querySelector("#contenedor-productos");
+const botonesCategorias = document.querySelectorAll(".boton-categoria");
+const tituloPrincipal = document.querySelector("#titulo-principal");
+const contadoresCarrito = document.querySelectorAll(".numerito"); // Selección modificada
+let botonesAgregar = document.querySelectorAll(".producto-agregar");
+
+// Cargar productos
 fetch("./js/productos.json")
     .then(response => response.json())
     .then(data => {
         productos = data;
-        cargarProductos(productos);
+        if (contenedorProductos) {
+            cargarProductos(productos);
+        }
+    })
+    .catch(error => console.error('Error cargando productos:', error));
+
+// Event listeners para categorías
+botonesCategorias.forEach(boton => {
+    boton.addEventListener("click", (e) => {
+        botonesCategorias.forEach(b => b.classList.remove("active"));
+        e.currentTarget.classList.add("active");
+
+        if (e.currentTarget.id !== "todos") {
+            const productoCategoria = productos.find(p => p.categoria.id === e.currentTarget.id);
+            tituloPrincipal.innerText = productoCategoria?.categoria?.nombre || "Categoría";
+            cargarProductos(productos.filter(p => p.categoria.id === e.currentTarget.id));
+        } else {
+            tituloPrincipal.innerText = "Todos los productos";
+            cargarProductos(productos);
+        }
     });
+});
 
-const contenedorProductos = document.querySelector("#contenedor-productos");
-const botonesCategorias = document.querySelectorAll(".boton-categoria");
-const tituloPrincipal = document.querySelector("#titulo-principal");
-let botonesAgregar = document.querySelectorAll(".producto-agregar");
-const numerito = document.querySelector("#numerito");
-
-botonesCategorias.forEach(boton => boton.addEventListener("click", () => {
-    aside.classList.remove("aside-visible");
-}));
-
+// Función para cargar productos
 function cargarProductos(productosElegidos) {
     contenedorProductos.innerHTML = "";
 
@@ -24,7 +43,9 @@ function cargarProductos(productosElegidos) {
         const div = document.createElement("div");
         div.classList.add("producto");
         div.innerHTML = `
-            <img class="producto-imagen" src="${producto.imagen}" alt="${producto.titulo}">
+            <a href="product.html?id=${producto.id}">
+                <img class="producto-imagen" src="${producto.imagen}" alt="${producto.titulo}">
+            </a>
             <div class="producto-detalles">
                 <h3 class="producto-titulo">${producto.titulo}</h3>
                 <p class="producto-precio">$${producto.precio}</p>
@@ -37,80 +58,133 @@ function cargarProductos(productosElegidos) {
     actualizarBotonesAgregar();
 }
 
-botonesCategorias.forEach(boton => {
-    boton.addEventListener("click", (e) => {
-        botonesCategorias.forEach(boton => boton.classList.remove("active"));
-        e.currentTarget.classList.add("active");
-
-        if (e.currentTarget.id != "todos") {
-            const productoCategoria = productos.find(producto => producto.categoria.id === e.currentTarget.id);
-            tituloPrincipal.innerText = productoCategoria.categoria.nombre;
-            const productosBoton = productos.filter(producto => producto.categoria.id === e.currentTarget.id);
-            cargarProductos(productosBoton);
-        } else {
-            tituloPrincipal.innerText = "Todos los productos";
-            cargarProductos(productos);
-        }
-    });
-});
-
+// Actualizar botones de agregar
 function actualizarBotonesAgregar() {
     botonesAgregar = document.querySelectorAll(".producto-agregar");
-
-    botonesAgregar.forEach(boton => {
-        boton.addEventListener("click", agregarAlCarrito);
-    });
+    botonesAgregar.forEach(boton => boton.addEventListener("click", agregarAlCarrito));
 }
 
-let productosEnCarrito;
-
-let productosEnCarritoLS = localStorage.getItem("productos-en-carrito");
-
-if (productosEnCarritoLS) {
-    productosEnCarrito = JSON.parse(productosEnCarritoLS);
-    actualizarNumerito();
-} else {
-    productosEnCarrito = [];
-}
-
+// Función agregar al carrito
 function agregarAlCarrito(e) {
     Toastify({
         text: "Producto agregado",
         duration: 3000,
         close: true,
-        gravity: "top", // `top` or `bottom`
-        position: "right", // `left`, `center` or `right`
-        stopOnFocus: true, // Prevents dismissing of toast on hover
+        gravity: "top",
+        position: "right",
+        stopOnFocus: true,
         style: {
-            background: "linear-gradient(to right, #4b33a8, #785ce9)",
+            background: "linear-gradient(to right,rgb(146, 85, 93),rgb(199, 112, 115))",
             borderRadius: "2rem",
             textTransform: "uppercase",
             fontSize: ".75rem"
         },
         offset: {
-            x: '1.5rem', // horizontal axis - can be a number or a string indicating unity. eg: '2em'
-            y: '1.5rem' // vertical axis - can be a number or a string indicating unity. eg: '2em'
-        },
-        onClick: function(){} // Callback after click
+            x: '1.5rem',
+            y: '1.5rem'
+        }
     }).showToast();
 
     const idBoton = e.currentTarget.id;
-    const productoAgregado = productos.find(producto => producto.id === idBoton);
+    const productoAgregado = productos.find(p => p.id === idBoton);
 
-    if (productosEnCarrito.some(producto => producto.id === idBoton)) {
-        const index = productosEnCarrito.findIndex(producto => producto.id === idBoton);
+    let productosEnCarrito = JSON.parse(localStorage.getItem("productos-en-carrito")) || [];
+
+    if (productosEnCarrito.some(p => p.id === idBoton)) {
+        const index = productosEnCarrito.findIndex(p => p.id === idBoton);
         productosEnCarrito[index].cantidad++;
     } else {
         productoAgregado.cantidad = 1;
         productosEnCarrito.push(productoAgregado);
     }
 
-    actualizarNumerito();
-
     localStorage.setItem("productos-en-carrito", JSON.stringify(productosEnCarrito));
+    actualizarNumerito();
 }
 
+// Actualizar contadores del carrito (lectura directa de localStorage)
 function actualizarNumerito() {
-    let nuevoNumerito = productosEnCarrito.reduce((acc, producto) => acc + producto.cantidad, 0);
-    numerito.innerText = nuevoNumerito;
+    const carrito = JSON.parse(localStorage.getItem("productos-en-carrito")) || [];
+    const totalItems = carrito.reduce((acc, producto) => acc + producto.cantidad, 0);
+    contadoresCarrito.forEach(contador => contador.textContent = totalItems);
+}
+
+// Inicialización al cargar
+document.addEventListener('DOMContentLoaded', () => {
+    actualizarNumerito();
+    contadoresCarrito.forEach(contador => {
+        if (!contador.textContent) contador.textContent = "0";
+    });
+});
+
+
+// Si estamos en product.html, cargar el producto individualmente
+if (window.location.pathname.includes("product.html")) {
+    const obtenerParametro = (param) => {
+        const urlParams = new URLSearchParams(window.location.search);
+        return urlParams.get(param);
+    };
+
+    fetch("js/productos.json")
+        .then(response => response.json())
+        .then(productos => {
+            const idProducto = obtenerParametro("id");
+            const producto = productos.find(p => p.id === idProducto);
+
+            if (producto) {
+                document.getElementById("productoImagen").src = producto.imagen;
+                document.getElementById("productoImagen").alt = producto.titulo;
+                document.getElementById("productoTitulo").innerText = producto.titulo;
+                document.getElementById("productoPrecio").innerText = "$" + producto.precio;
+                document.getElementById("productoDescripcion").innerText = producto.descripcion || "Descripción no disponible";
+
+                const botonAgregar = document.getElementById("botonAgregarCarrito");
+                if (botonAgregar) {
+                    botonAgregar.addEventListener("click", () => {
+                        const cantidad = parseInt(document.getElementById("inputQuantity").value) || 1;
+                        agregarAlCarritoConCantidad(producto, cantidad);
+                    });
+                }
+            } else {
+                document.getElementById("productoTitulo").innerText = "Producto no encontrado";
+            }
+        })
+        .catch(err => {
+            console.error("Error cargando producto:", err);
+            document.getElementById("productoTitulo").innerText = "Error al cargar producto";
+        });
+
+    function agregarAlCarritoConCantidad(producto, cantidad) {
+        let productosEnCarrito = JSON.parse(localStorage.getItem("productos-en-carrito")) || [];
+
+        const productoExistente = productosEnCarrito.find(p => p.id === producto.id);
+        if (productoExistente) {
+            productoExistente.cantidad += cantidad;
+        } else {
+            const productoParaCarrito = { ...producto, cantidad };
+            productosEnCarrito.push(productoParaCarrito);
+        }
+
+        localStorage.setItem("productos-en-carrito", JSON.stringify(productosEnCarrito));
+        actualizarNumerito();
+
+        Toastify({
+            text: "Producto agregado al carrito",
+            duration: 3000,
+            close: true,
+            gravity: "top",
+            position: "right",
+            stopOnFocus: true,
+            style: {
+                background: "linear-gradient(to right,rgb(146, 85, 93),rgb(199, 112, 115))",
+                borderRadius: "2rem",
+                textTransform: "uppercase",
+                fontSize: ".75rem"
+            },
+            offset: {
+                x: '1.5rem',
+                y: '1.5rem'
+            }
+        }).showToast();
+    }
 }

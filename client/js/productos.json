@@ -1,218 +1,500 @@
 [
     {
-        "id": "abrigo-01",
-        "titulo": "Abrigo 01",
-        "imagen": "./img/abrigos/01.jpg",
+        "id": "bodas-civil-01",
+        "titulo": "Invitación boda civil",
+        "imagen": "./img/invitacion.png",
         "categoria": {
-            "nombre": "Abrigos",
-            "id": "abrigos"
+            "nombre": "Bodas por civil",
+            "id": "bodas-civil"
         },
-        "precio": 1000,
-        "stock": 10,
-        "descripcion": "Abrigo de invierno, ideal para el frío."
+        "precio": 30000,
+        "descripcion": "Invitación digital para boda civil, elegante y adaptativa para verse bien en cualquier tipo de pantalla y dispositivo."
     },
     {
-        "id": "abrigo-02",
-        "titulo": "Abrigo 02",
-        "imagen": "./img/abrigos/02.jpg",
+        "id": "bodas-civil-02",
+        "titulo": "Invitación boda civil",
+        "imagen": "./img/invitacion.png",
         "categoria": {
-            "nombre": "Abrigos",
-            "id": "abrigos"
+            "nombre": "Bodas por civil",
+            "id": "bodas-civil"
         },
-        "precio": 1000,
-        "stock": 5,
-        "descripcion": "Abrigo con forro térmico."
+        "precio": 30000,
+        "descripcion": "Invitación digital para boda civil, elegante y adaptativa para verse bien en cualquier tipo de pantalla y dispositivo."
     },
     {
-        "id": "abrigo-03",
-        "titulo": "Abrigo 03",
-        "imagen": "./img/abrigos/03.jpg",
+        "id": "bodas-civil-03",
+        "titulo": "Invitación boda civil",
+        "imagen": "./img/invitacion.png",
         "categoria": {
-            "nombre": "Abrigos",
-            "id": "abrigos"
+            "nombre": "Bodas por civil",
+            "id": "bodas-civil"
         },
-        "precio": 1000,
-        "stock": 15,
-        "descripcion": "Abrigo cómodo para climas fríos."
+        "precio": 30000,
+        "descripcion": "Invitación digital para boda civil, elegante y adaptativa para verse bien en cualquier tipo de pantalla y dispositivo."
     },
     {
-        "id": "abrigo-04",
-        "titulo": "Abrigo 04",
-        "imagen": "./img/abrigos/04.jpg",
+        "id": "bodas-civil-04",
+        "titulo": "Invitación boda civil",
+        "imagen": "./img/invitacion.png",
         "categoria": {
-            "nombre": "Abrigos",
-            "id": "abrigos"
+            "nombre": "Bodas por civil",
+            "id": "bodas-civil"
         },
-        "precio": 1200,
-        "stock": 8,
-        "descripcion": "Abrigo con detalles en cuero."
+        "precio": 30000,
+        "descripcion": "Invitación digital para boda civil, elegante y adaptativa para verse bien en cualquier tipo de pantalla y dispositivo."
     },
     {
-        "id": "abrigo-05",
-        "titulo": "Abrigo 05",
-        "imagen": "./img/abrigos/05.jpg",
+        "id": "bodas-civil-05",
+        "titulo": "Invitación boda civil",
+        "imagen": "./img/invitacion.png",
         "categoria": {
-            "nombre": "Abrigos",
-            "id": "abrigos"
+            "nombre": "Bodas por civil",
+            "id": "bodas-civil"
         },
-        "precio": 1100,
-        "stock": 12,
-        "descripcion": "Abrigo resistente al viento."
+        "precio": 30000,
+        "descripcion": "Invitación digital para boda civil, elegante y adaptativa para verse bien en cualquier tipo de pantalla y dispositivo."
     },
     {
-        "id": "camiseta-01",
-        "titulo": "Camiseta 01",
-        "imagen": "./img/camisetas/01.jpg",
+        "id": "bodas-iglesia-01",
+        "titulo": "Invitación boda iglesia",
+        "imagen": "./img/invitacion.png",
         "categoria": {
-            "nombre": "Camisetas",
-            "id": "camisetas"
+            "nombre": "Bodas por iglesia",
+            "id": "bodas-iglesia"
         },
-        "precio": 800,
-        "stock": 20,
-        "descripcion": "Camiseta de algodón suave."
+        "precio": 30000,
+        "descripcion": "Invitación digital para boda por iglesia, diseño clásico y adaptativo que se visualiza correctamente en todos los dispositivos."
     },
     {
-        "id": "camiseta-02",
-        "titulo": "Camiseta 02",
-        "imagen": "./img/camisetas/02.jpg",
+        "id": "bodas-iglesia-02",
+        "titulo": "Invitación boda iglesia",
+        "imagen": "./img/invitacion.png",
         "categoria": {
-            "nombre": "Camisetas",
-            "id": "camisetas"
+            "nombre": "Bodas por iglesia",
+            "id": "bodas-iglesia"
         },
-        "precio": 850,
-        "stock": 18,
-        "descripcion": "Camiseta con estampado moderno."
+        "precio": 30000,
+        "descripcion": "Invitación digital para boda por iglesia, diseño clásico y adaptativo que se visualiza correctamente en todos los dispositivos."
     },
     {
-        "id": "camiseta-03",
-        "titulo": "Camiseta 03",
-        "imagen": "./img/camisetas/03.jpg",
+        "id": "bodas-iglesia-03",
+        "titulo": "Invitación boda iglesia",
+        "imagen": "./img/invitacion.png",
         "categoria": {
-            "nombre": "Camisetas",
-            "id": "camisetas"
+            "nombre": "Bodas por iglesia",
+            "id": "bodas-iglesia"
         },
-        "precio": 900,
-        "stock": 25,
-        "descripcion": "Camiseta ligera para el verano."
+        "precio": 30000,
+        "descripcion": "Invitación digital para boda por iglesia, diseño clásico y adaptativo que se visualiza correctamente en todos los dispositivos."
     },
     {
-        "id": "camiseta-04",
-        "titulo": "Camiseta 04",
-        "imagen": "./img/camisetas/04.jpg",
+        "id": "bodas-iglesia-04",
+        "titulo": "Invitación boda iglesia",
+        "imagen": "./img/invitacion.png",
         "categoria": {
-            "nombre": "Camisetas",
-            "id": "camisetas"
+            "nombre": "Bodas por iglesia",
+            "id": "bodas-iglesia"
         },
-        "precio": 950,
-        "stock": 10,
-        "descripcion": "Camiseta con cuello en V."
+        "precio": 30000,
+        "descripcion": "Invitación digital para boda por iglesia, diseño clásico y adaptativo que se visualiza correctamente en todos los dispositivos."
     },
     {
-        "id": "camiseta-05",
-        "titulo": "Camiseta 05",
-        "imagen": "./img/camisetas/05.jpg",
+        "id": "bodas-iglesia-05",
+        "titulo": "Invitación boda iglesia",
+        "imagen": "./img/invitacion.png",
         "categoria": {
-            "nombre": "Camisetas",
-            "id": "camisetas"
+            "nombre": "Bodas por iglesia",
+            "id": "bodas-iglesia"
         },
-        "precio": 920,
-        "stock": 22,
-        "descripcion": "Camiseta de manga corta de alta calidad."
+        "precio": 30000,
+        "descripcion": "Invitación digital para boda por iglesia, diseño clásico y adaptativo que se visualiza correctamente en todos los dispositivos."
     },
     {
-        "id": "camiseta-06",
-        "titulo": "Camiseta 06",
-        "imagen": "./img/camisetas/06.jpg",
+        "id": "revelacion-genero-01",
+        "titulo": "Invitación revelación de género",
+        "imagen": "./img/invitacion.png",
         "categoria": {
-            "nombre": "Camisetas",
-            "id": "camisetas"
+            "nombre": "Revelación de género",
+            "id": "revelacion-genero"
         },
-        "precio": 1000,
-        "stock": 15,
-        "descripcion": "Camiseta con estampado artístico."
+        "precio": 30000,
+        "descripcion": "Invitación digital para revelación de género, moderna y adaptativa para visualizarse en todo tipo de pantallas y dispositivos."
     },
     {
-        "id": "camiseta-07",
-        "titulo": "Camiseta 07",
-        "imagen": "./img/camisetas/07.jpg",
+        "id": "revelacion-genero-02",
+        "titulo": "Invitación revelación de género",
+        "imagen": "./img/invitacion.png",
         "categoria": {
-            "nombre": "Camisetas",
-            "id": "camisetas"
+            "nombre": "Revelación de género",
+            "id": "revelacion-genero"
         },
-        "precio": 950,
-        "stock": 30,
-        "descripcion": "Camiseta en colores vibrantes."
+        "precio": 30000,
+        "descripcion": "Invitación digital para revelación de género, moderna y adaptativa para visualizarse en todo tipo de pantallas y dispositivos."
     },
     {
-        "id": "camiseta-08",
-        "titulo": "Camiseta 08",
-        "imagen": "./img/camisetas/08.jpg",
+        "id": "revelacion-genero-03",
+        "titulo": "Invitación revelación de género",
+        "imagen": "./img/invitacion.png",
         "categoria": {
-            "nombre": "Camisetas",
-            "id": "camisetas"
+            "nombre": "Revelación de género",
+            "id": "revelacion-genero"
         },
-        "precio": 880,
-        "stock": 17,
-        "descripcion": "Camiseta deportiva para ejercicios."
+        "precio": 30000,
+        "descripcion": "Invitación digital para revelación de género, moderna y adaptativa para visualizarse en todo tipo de pantallas y dispositivos."
     },
     {
-        "id": "pantalon-01",
-        "titulo": "Pantalón 01",
-        "imagen": "./img/pantalones/01.jpg",
+        "id": "revelacion-genero-04",
+        "titulo": "Invitación revelación de género",
+        "imagen": "./img/invitacion.png",
         "categoria": {
-            "nombre": "Pantalones",
-            "id": "pantalones"
+            "nombre": "Revelación de género",
+            "id": "revelacion-genero"
         },
-        "precio": 1200,
-        "stock": 10,
-        "descripcion": "Pantalón de algodón, ideal para cualquier ocasión."
+        "precio": 30000,
+        "descripcion": "Invitación digital para revelación de género, moderna y adaptativa para visualizarse en todo tipo de pantallas y dispositivos."
     },
     {
-        "id": "pantalon-02",
-        "titulo": "Pantalón 02",
-        "imagen": "./img/pantalones/02.jpg",
+        "id": "revelacion-genero-05",
+        "titulo": "Invitación revelación de género",
+        "imagen": "./img/invitacion.png",
         "categoria": {
-            "nombre": "Pantalones",
-            "id": "pantalones"
+            "nombre": "Revelación de género",
+            "id": "revelacion-genero"
         },
-        "precio": 1300,
-        "stock": 8,
-        "descripcion": "Pantalón con diseño moderno y cortes finos."
+        "precio": 30000,
+        "descripcion": "Invitación digital para revelación de género, moderna y adaptativa para visualizarse en todo tipo de pantallas y dispositivos."
     },
     {
-        "id": "pantalon-03",
-        "titulo": "Pantalón 03",
-        "imagen": "./img/pantalones/03.jpg",
+        "id": "baby-shower-01",
+        "titulo": "Invitación Baby Shower",
+        "imagen": "./img/invitacion.png",
         "categoria": {
-            "nombre": "Pantalones",
-            "id": "pantalones"
+            "nombre": "Baby Shower",
+            "id": "baby-shower"
         },
-        "precio": 1400,
-        "stock": 12,
-        "descripcion": "Pantalón de vestir formal."
+        "precio": 30000,
+        "descripcion": "Invitación digital para Baby Shower, diseño alegre y adaptativo para visualizarse correctamente en cualquier dispositivo móvil o pantalla."
     },
     {
-        "id": "pantalon-04",
-        "titulo": "Pantalón 04",
-        "imagen": "./img/pantalones/04.jpg",
+        "id": "baby-shower-02",
+        "titulo": "Invitación Baby Shower",
+        "imagen": "./img/invitacion.png",
         "categoria": {
-            "nombre": "Pantalones",
-            "id": "pantalones"
+            "nombre": "Baby Shower",
+            "id": "baby-shower"
         },
-        "precio": 1250,
-        "stock": 18,
-        "descripcion": "Pantalón cómodo para el día a día."
+        "precio": 30000,
+        "descripcion": "Invitación digital para Baby Shower, diseño alegre y adaptativo para visualizarse correctamente en cualquier dispositivo móvil o pantalla."
     },
     {
-        "id": "pantalon-05",
-        "titulo": "Pantalón 05",
-        "imagen": "./img/pantalones/05.jpg",
+        "id": "baby-shower-03",
+        "titulo": "Invitación Baby Shower",
+        "imagen": "./img/invitacion.png",
         "categoria": {
-            "nombre": "Pantalones",
-            "id": "pantalones"
+            "nombre": "Baby Shower",
+            "id": "baby-shower"
         },
-        "precio": 1150,
-        "stock": 5,
-        "descripcion": "Pantalón deportivo de alta elasticidad."
+        "precio": 30000,
+        "descripcion": "Invitación digital para Baby Shower, diseño alegre y adaptativo para visualizarse correctamente en cualquier dispositivo móvil o pantalla."
+    },
+    {
+        "id": "baby-shower-04",
+        "titulo": "Invitación Baby Shower",
+        "imagen": "./img/invitacion.png",
+        "categoria": {
+            "nombre": "Baby Shower",
+            "id": "baby-shower"
+        },
+        "precio": 30000,
+        "descripcion": "Invitación digital para Baby Shower, diseño alegre y adaptativo para visualizarse correctamente en cualquier dispositivo móvil o pantalla."
+    },
+    {
+        "id": "baby-shower-05",
+        "titulo": "Invitación Baby Shower",
+        "imagen": "./img/invitacion.png",
+        "categoria": {
+            "nombre": "Baby Shower",
+            "id": "baby-shower"
+        },
+        "precio": 30000,
+        "descripcion": "Invitación digital para Baby Shower, diseño alegre y adaptativo para visualizarse correctamente en cualquier dispositivo móvil o pantalla."
+    },
+    {
+        "id": "xv-anos-01",
+        "titulo": "Invitación XV años",
+        "imagen": "./img/invitacion.png",
+        "categoria": {
+            "nombre": "XV años",
+            "id": "xv-anos"
+        },
+        "precio": 30000,
+        "descripcion": "Invitación digital para XV años, elegante y adaptativa para verse bien en cualquier dispositivo o tamaño de pantalla."
+    },
+    {
+        "id": "xv-anos-02",
+        "titulo": "Invitación XV años",
+        "imagen": "./img/invitacion.png",
+        "categoria": {
+            "nombre": "XV años",
+            "id": "xv-anos"
+        },
+        "precio": 30000,
+        "descripcion": "Invitación digital para XV años, elegante y adaptativa para verse bien en cualquier dispositivo o tamaño de pantalla."
+    },
+    {
+        "id": "xv-anos-03",
+        "titulo": "Invitación XV años",
+        "imagen": "./img/invitacion.png",
+        "categoria": {
+            "nombre": "XV años",
+            "id": "xv-anos"
+        },
+        "precio": 30000,
+        "descripcion": "Invitación digital para XV años, elegante y adaptativa para verse bien en cualquier dispositivo o tamaño de pantalla."
+    },
+    {
+        "id": "xv-anos-04",
+        "titulo": "Invitación XV años",
+        "imagen": "./img/invitacion.png",
+        "categoria": {
+            "nombre": "XV años",
+            "id": "xv-anos"
+        },
+        "precio": 30000,
+        "descripcion": "Invitación digital para XV años, elegante y adaptativa para verse bien en cualquier dispositivo o tamaño de pantalla."
+    },
+    {
+        "id": "xv-anos-05",
+        "titulo": "Invitación XV años",
+        "imagen": "./img/invitacion.png",
+        "categoria": {
+            "nombre": "XV años",
+            "id": "xv-anos"
+        },
+        "precio": 30000,
+        "descripcion": "Invitación digital para XV años, elegante y adaptativa para verse bien en cualquier dispositivo o tamaño de pantalla."
+    },
+    {
+        "id": "bautismos-01",
+        "titulo": "Invitación bautismo",
+        "imagen": "./img/invitacion.png",
+        "categoria": {
+        "nombre": "Bautismos",
+        "id": "bautismos"
+        },
+        "precio": 30000,
+        "descripcion": "Invitación digital para bautismo, diseño delicado y adaptativo para verse perfectamente en dispositivos móviles y pantallas."
+    },
+    {
+        "id": "bautismos-02",
+        "titulo": "Invitación bautismo",
+        "imagen": "./img/invitacion.png",
+        "categoria": {
+        "nombre": "Bautismos",
+        "id": "bautismos"
+        },
+        "precio": 30000,
+        "descripcion": "Invitación digital para bautismo, diseño delicado y adaptativo para verse perfectamente en dispositivos móviles y pantallas."
+    },
+    {
+        "id": "bautismos-03",
+        "titulo": "Invitación bautismo",
+        "imagen": "./img/invitacion.png",
+        "categoria": {
+        "nombre": "Bautismos",
+        "id": "bautismos"
+        },
+        "precio": 30000,
+        "descripcion": "Invitación digital para bautismo, diseño delicado y adaptativo para verse perfectamente en dispositivos móviles y pantallas."
+    },
+    {
+        "id": "bautismos-04",
+        "titulo": "Invitación bautismo",
+        "imagen": "./img/invitacion.png",
+        "categoria": {
+        "nombre": "Bautismos",
+        "id": "bautismos"
+        },
+        "precio": 30000,
+        "descripcion": "Invitación digital para bautismo, diseño delicado y adaptativo para verse perfectamente en dispositivos móviles y pantallas."
+    },
+    {
+        "id": "bautismos-05",
+        "titulo": "Invitación bautismo",
+        "imagen": "./img/invitacion.png",
+        "categoria": {
+        "nombre": "Bautismos",
+        "id": "bautismos"
+        },
+        "precio": 30000,
+        "descripcion": "Invitación digital para bautismo, diseño delicado y adaptativo para verse perfectamente en dispositivos móviles y pantallas."
+    },
+
+    {
+        "id": "fiestas-01",
+        "titulo": "Invitación fiesta",
+        "imagen": "./img/invitacion.png",
+        "categoria": {
+        "nombre": "Fiestas",
+        "id": "fiestas"
+        },
+        "precio": 30000,
+        "descripcion": "Invitación digital para fiesta, diseño vibrante y moderno que se adapta a todos los dispositivos y tamaños de pantalla."
+    },
+    {
+        "id": "fiestas-02",
+        "titulo": "Invitación fiesta",
+        "imagen": "./img/invitacion.png",
+        "categoria": {
+        "nombre": "Fiestas",
+        "id": "fiestas"
+        },
+        "precio": 30000,
+        "descripcion": "Invitación digital para fiesta, diseño vibrante y moderno que se adapta a todos los dispositivos y tamaños de pantalla."
+    },
+    {
+        "id": "fiestas-03",
+        "titulo": "Invitación fiesta",
+        "imagen": "./img/invitacion.png",
+        "categoria": {
+        "nombre": "Fiestas",
+        "id": "fiestas"
+        },
+        "precio": 30000,
+        "descripcion": "Invitación digital para fiesta, diseño vibrante y moderno que se adapta a todos los dispositivos y tamaños de pantalla."
+    },
+    {
+        "id": "fiestas-04",
+        "titulo": "Invitación fiesta",
+        "imagen": "./img/invitacion.png",
+        "categoria": {
+        "nombre": "Fiestas",
+        "id": "fiestas"
+        },
+        "precio": 30000,
+        "descripcion": "Invitación digital para fiesta, diseño vibrante y moderno que se adapta a todos los dispositivos y tamaños de pantalla."
+    },
+    {
+        "id": "fiestas-05",
+        "titulo": "Invitación fiesta",
+        "imagen": "./img/invitacion.png",
+        "categoria": {
+        "nombre": "Fiestas",
+        "id": "fiestas"
+        },
+        "precio": 30000,
+        "descripcion": "Invitación digital para fiesta, diseño vibrante y moderno que se adapta a todos los dispositivos y tamaños de pantalla."
+    },
+
+    {
+        "id": "graduaciones-01",
+        "titulo": "Invitación graduación",
+        "imagen": "./img/invitacion.png",
+        "categoria": {
+        "nombre": "Graduaciones",
+        "id": "graduaciones"
+        },
+        "precio": 30000,
+        "descripcion": "Invitación digital para graduación, diseño formal y elegante que se adapta perfectamente a cualquier tipo de pantalla."
+    },
+    {
+        "id": "graduaciones-02",
+        "titulo": "Invitación graduación",
+        "imagen": "./img/invitacion.png",
+        "categoria": {
+        "nombre": "Graduaciones",
+        "id": "graduaciones"
+        },
+        "precio": 30000,
+        "descripcion": "Invitación digital para graduación, diseño formal y elegante que se adapta perfectamente a cualquier tipo de pantalla."
+    },
+    {
+        "id": "graduaciones-03",
+        "titulo": "Invitación graduación",
+        "imagen": "./img/invitacion.png",
+        "categoria": {
+        "nombre": "Graduaciones",
+        "id": "graduaciones"
+        },
+        "precio": 30000,
+        "descripcion": "Invitación digital para graduación, diseño formal y elegante que se adapta perfectamente a cualquier tipo de pantalla."
+    },
+    {
+        "id": "graduaciones-04",
+        "titulo": "Invitación graduación",
+        "imagen": "./img/invitacion.png",
+        "categoria": {
+        "nombre": "Graduaciones",
+        "id": "graduaciones"
+        },
+        "precio": 30000,
+        "descripcion": "Invitación digital para graduación, diseño formal y elegante que se adapta perfectamente a cualquier tipo de pantalla."
+    },
+    {
+        "id": "graduaciones-05",
+        "titulo": "Invitación graduación",
+        "imagen": "./img/invitacion.png",
+        "categoria": {
+        "nombre": "Graduaciones",
+        "id": "graduaciones"
+        },
+        "precio": 30000,
+        "descripcion": "Invitación digital para graduación, diseño formal y elegante que se adapta perfectamente a cualquier tipo de pantalla."
+    },
+
+    {
+        "id": "eventos-corporativos-01",
+        "titulo": "Invitación eventos corporativos",
+        "imagen": "./img/invitacion.png",
+        "categoria": {
+        "nombre": "Eventos corporativos",
+        "id": "eventos-corporativos"
+        },
+        "precio": 30000,
+        "descripcion": "Invitación digital para eventos corporativos, diseño profesional y adaptativo para verse bien en todos los dispositivos."
+    },
+    {
+        "id": "eventos-corporativos-02",
+        "titulo": "Invitación eventos corporativos",
+        "imagen": "./img/invitacion.png",
+        "categoria": {
+        "nombre": "Eventos corporativos",
+        "id": "eventos-corporativos"
+        },
+        "precio": 30000,
+        "descripcion": "Invitación digital para eventos corporativos, diseño profesional y adaptativo para verse bien en todos los dispositivos."
+    },
+    {
+        "id": "eventos-corporativos-03",
+        "titulo": "Invitación eventos corporativos",
+        "imagen": "./img/invitacion.png",
+        "categoria": {
+        "nombre": "Eventos corporativos",
+        "id": "eventos-corporativos"
+        },
+        "precio": 30000,
+        "descripcion": "Invitación digital para eventos corporativos, diseño profesional y adaptativo para verse bien en todos los dispositivos."
+    },
+    {
+        "id": "eventos-corporativos-04",
+        "titulo": "Invitación eventos corporativos",
+        "imagen": "./img/invitacion.png",
+        "categoria": {
+        "nombre": "Eventos corporativos",
+        "id": "eventos-corporativos"
+        },
+        "precio": 30000,
+        "descripcion": "Invitación digital para eventos corporativos, diseño profesional y adaptativo para verse bien en todos los dispositivos."
+    },
+    {
+        "id": "eventos-corporativos-05",
+        "titulo": "Invitación eventos corporativos",
+        "imagen": "./img/invitacion.png",
+        "categoria": {
+        "nombre": "Eventos corporativos",
+        "id": "eventos-corporativos"
+        },
+        "precio": 30000,
+        "descripcion": "Invitación digital para eventos corporativos, diseño profesional y adaptativo para verse bien en todos los dispositivos."
     }
 ]

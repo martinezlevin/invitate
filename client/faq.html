@@ -1,0 +1,804 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" >
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0 maximum-scale=5.0">
+  <meta name="format-detection" content="telephone=no">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  
+  <!-- Meta etiquetas SEO -->
+  <meta name="description" content="Soporte Técnico de software y hardware">
+  <meta name="keywords" content="ecommerce,love,store,invitation">
+
+  <!-- OPEN GRAPH -->    
+  <meta property="og:title" content="Soporte Técnico de software y hardware">
+  <meta property="og:imagen" content="">
+  <meta property="og:author" content="Powered by Guillermo Martinez">
+  <meta property="og:description" content="Tienda Online de Invitaciones Digitales">
+
+  <!-- FAVICON -->
+  <link rel="icon" href="images/favicon.ico" type="image/png">
+
+  <!-- TITULO -->
+  <title>INVITATE</title>
+
+  <!-- CSS-->
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="stylesheet" type="text/css" href="css/vendor.css">
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
+  <!-- CSS BS5.3.6v -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+
+  <!-- Swiper JS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+
+  <!--  Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&family=Marcellus&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Love+Light&display=swap" rel="stylesheet">
+
+</head>
+
+<body class="homepage">
+
+
+  <div id="carouselTextOnly" class="carousel slide" data-bs-ride="carousel" data-bs-interval="5000">
+    <div class="carousel-inner text-white text-center bg-pink-dark">
+      <div class="carousel-item active">
+        <p class="mb-0 fs-6">NUESTRO SERVICIO ES A NIVEL INTERNACIONAL</p>
+      </div>
+      <div class="carousel-item">
+        <p class="mb-0 fs-6">DISEÑOS EXCLUSIVOS EN FULL HD</p>
+      </div>
+      <div class="carousel-item">
+        <p class="mb-0 fs-6">APROVECHA NUESTRAS PROMOCIONES MENSUALES</p>
+      </div>
+      <div class="carousel-item">
+        <p class="mb-0 fs-6">BRINDAMOS SERVICIO POST-VENTA</p>
+      </div>
+      <div class="carousel-item">
+        <p class="mb-0 fs-6">ENTREGAS RÁPIDAS</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- LOADER -->
+  <div class="preloader text-white fs-6 text-uppercase overflow-hidden"></div>
+<!-- FIN DEL LOADER -->
+
+<!-- BUSCADOR -->
+  <div class="search-popup">
+    <div class="search-popup-container">
+
+      <form role="search" method="get" class="form-group" id="search-form">
+        <input type="search" id="search-input" class="form-control border-0 border-bottom"
+          placeholder="Escribe y pulsa enter" name="s" />
+        <button type="submit" class="search-submit border-0 position-absolute bg-white"
+          style="top: 15px;right: 15px;">
+          <i class="bi bi-search fs-4"></i> <!--LUPA -->
+        </button>
+      </form>
+      
+
+      <h5 class="cat-list-title">Explorar categorías</h5>
+
+      <ul class="cat-list">
+        <li class="cat-list-item" data-name="bodas por civil">
+          <a href="menu.html" title="Jackets">Bodas por civil</a>
+        </li>
+        <li class="cat-list-item" data-name="bodas por iglesia">
+          <a href="menu.html" title="T-shirts">Bodas por iglesia</a>
+        </li>
+        <li class="cat-list-item" data-name="revelación de género">
+          <a href="menu.html" title="Handbags">Revelación de género</a>
+        </li>
+        <li class="cat-list-item" data-name="baby shower">
+          <a href="menu.html" title="Accessories">Baby Shower</a>
+        </li>
+        <li class="cat-list-item" data-name="XV años">
+          <a href="menu.html" title="Cosmetics">XV años</a>
+        </li>
+        <li class="cat-list-item" data-name="bautismos">
+          <a href="menu.html" title="Dresses">Bautismos</a>
+        </li>
+        <li class="cat-list-item" data-name="fiestas">
+          <a href="menu.html" title="Jumpsuits">Fiestas</a>
+        </li>
+        <li class="cat-list-item" data-name="graduaciones">
+          <a href="menu.html" title="Jumpsuits">Graduaciones</a>
+        </li>
+        <li class="cat-list-item" data-name="eventos corporativos">
+          <a href="menu.html" title="Jumpsuits">Eventos corporativos</a>
+        </li>
+      </ul>
+
+    </div>
+  </div>
+<!-- FIN DEL BUSCADOR -->
+
+<!-- NAV -->
+<nav class="navbar navbar-expand-lg bg-light text-uppercase fs-6 p-3 border-bottom align-items-center">
+  <div class="container-fluid">
+    <div class="row justify-content-between align-items-center w-100">
+
+      <div class="col-auto">
+        <a class="navbar-brand text-white" href="index.html">
+            <svg version="1.0" xmlns="http://www.w3.org/2000/svg"
+            width="165" height="40" viewBox="0 0 279.000000 40.000000"
+            preserveAspectRatio="xMidYMid meet">
+           
+           <g transform="translate(0.000000,40.000000) scale(0.100000,-0.100000)"
+           fill="#000000" stroke="none">
+           <path d="M330 341 c0 -5 7 -11 15 -15 12 -4 15 -29 15 -134 0 -124 -1 -129
+           -22 -140 -19 -9 -12 -11 42 -11 62 0 64 1 43 16 -22 15 -23 22 -23 134 0 91 3
+           121 15 133 23 23 19 26 -35 26 -27 0 -50 -4 -50 -9z"/>
+           <path d="M508 334 c21 -16 22 -23 22 -140 0 -116 -1 -124 -22 -138 -22 -15
+           -20 -16 32 -16 52 0 54 1 32 16 -20 14 -22 23 -22 121 0 126 -5 127 111 -28
+           45 -61 87 -108 93 -106 7 2 11 47 11 136 0 129 1 132 25 151 l25 20 -52 0
+           c-29 0 -53 -4 -53 -10 0 -5 6 -10 14 -10 7 0 16 -10 20 -22 9 -36 7 -190 -3
+           -186 -5 2 -47 53 -93 113 -80 105 -85 110 -123 112 -39 3 -40 3 -17 -13z"/>
+           <path d="M830 344 c0 -3 9 -13 20 -22 11 -10 44 -75 74 -147 29 -72 57 -130
+           61 -130 5 0 32 58 61 130 29 72 62 137 74 147 29 23 25 28 -20 28 -22 0 -40
+           -4 -40 -10 0 -5 5 -10 11 -10 17 0 5 -49 -38 -147 l-37 -86 -42 109 -43 109
+           22 17 c21 17 21 18 -40 18 -35 0 -63 -3 -63 -6z"/>
+           <path d="M1170 341 c0 -5 7 -11 15 -15 12 -4 15 -29 15 -134 0 -124 -1 -129
+           -22 -140 -19 -9 -12 -11 42 -11 62 0 64 1 43 16 -22 15 -23 22 -23 134 0 91 3
+           121 15 133 23 23 19 26 -35 26 -27 0 -50 -4 -50 -9z"/>
+           <path d="M1320 313 c0 -37 1 -38 13 -13 11 22 19 25 62 25 l50 0 0 -123 c0
+           -120 -1 -124 -25 -142 l-25 -20 75 1 c72 0 74 0 48 15 l-28 15 0 129 0 130 44
+           0 c37 0 48 -5 65 -27 19 -26 20 -27 21 -6 0 52 -2 53 -156 53 l-144 0 0 -37z"/>
+           <path d="M1897 344 c-4 -4 -7 -19 -6 -33 l0 -26 16 23 c12 18 25 22 64 22 l49
+           0 0 -122 c0 -128 -2 -138 -35 -156 -16 -9 -6 -11 55 -11 61 0 71 2 55 11 -33
+           18 -35 28 -35 156 l0 122 43 0 c47 0 58 -6 76 -35 10 -18 11 -16 9 15 l-3 35
+           -141 3 c-77 1 -143 -1 -147 -4z"/>
+           <path d="M2230 340 c0 -5 7 -10 15 -10 13 0 15 -21 15 -133 0 -129 -1 -134
+           -22 -145 -18 -8 4 -11 98 -11 130 -1 134 1 134 52 -1 21 -2 20 -21 -5 -18 -24
+           -28 -28 -73 -28 -29 0 -57 5 -64 12 -7 7 -12 36 -12 65 0 51 1 53 27 53 14 0
+           35 -7 45 -17 17 -15 18 -14 18 33 0 47 -1 48 -16 26 -10 -14 -25 -22 -45 -22
+           -29 0 -29 0 -29 60 l0 60 59 0 c51 0 62 -3 75 -22 16 -22 16 -22 16 10 l0 32
+           -110 0 c-67 0 -110 -4 -110 -10z"/>
+           <path d="M1691 208 c-31 -78 -61 -140 -74 -150 -22 -17 -21 -18 27 -18 45 0
+           48 1 31 14 -17 12 -18 18 -7 55 l13 41 59 0 59 0 13 -41 c11 -37 10 -43 -7
+           -55 -17 -12 -12 -14 46 -14 63 0 64 1 41 18 -14 11 -44 69 -76 147 -29 71 -57
+           130 -62 132 -6 2 -34 -56 -63 -129z m59 70 c0 -2 9 -27 20 -55 l20 -53 -45 0
+           c-29 0 -45 4 -45 12 0 21 32 98 41 98 5 0 9 -1 9 -2z"/>
+           </g>
+           </svg>
+        </a>
+      </div>
+
+      <div class="col-auto">
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+          aria-controls="offcanvasNavbar">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+          aria-labelledby="offcanvasNavbarLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menú</h5>
+            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+
+          <div class="offcanvas-body">
+            <ul class="navbar-nav justify-content-end flex-grow-1 gap-1 gap-md-5 pe-3">
+              <li class="nav-item dropdown">
+                <a class="nav-link active" href="index.html" id="dropdownHome"
+                  aria-haspopup="true" aria-expanded="false">Inicio</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="dropdownShop" data-bs-toggle="dropdown"
+                  aria-haspopup="true" aria-expanded="false">Categorías</a>
+                <ul class="dropdown-menu list-unstyled" aria-labelledby="dropdownShop">
+                  <li><a href="menu.html" class="dropdown-item item-anchor">Bodas por civil </a></li>
+                  <li><a href="menu.html" class="dropdown-item item-anchor">Bodas por iglesia </a></li>
+                  <li><a href="menu.html" class="dropdown-item item-anchor">Revelación de género </a></li>
+                  <li><a href="menu.html" class="dropdown-item item-anchor">Baby Shower </a></li>
+                  <li><a href="menu.html" class="dropdown-item item-anchor">XV años </a></li>
+                  <li><a href="menu.html" class="dropdown-item item-anchor">Bautismos </a></li>
+                  <li><a href="menu.html" class="dropdown-item item-anchor">Fiestas </a></li>
+                  <li><a href="menu.html" class="dropdown-item item-anchor">Graduaciones </a></li>
+                  <li><a href="menu.html" class="dropdown-item item-anchor">Eventos corporativos </a></li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="dropdownPages" data-bs-toggle="dropdown"
+                  aria-haspopup="true" aria-expanded="false">Páginas</a>
+                <ul class="dropdown-menu list-unstyled" aria-labelledby="dropdownPages">
+                  <li><a href="#newsletter" class="dropdown-item item-anchor">Próximamente</a></li>
+                  <li><a href="about.html" class="dropdown-item item-anchor">Nuestra historia</a></li>
+                  <li><a href="faq.html" class="dropdown-item item-anchor">Preguntas frecuentes</a></li>
+                  <li><a href="carrito.html" class="dropdown-item item-anchor">Carrito</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#footer">Contacto</a>
+              </li>
+
+              <!-- CARRITO y BUSCADOR MOBILE dentro del menú burger -->
+              <ul class="navbar-nav">
+                <!-- Carrito (solo mobile) -->
+                <li class="d-lg-none nav-item position-relative">
+                  <a href="carrito.html" class="boton-menu boton-carrito nav-link d-inline-flex align-items-center">
+                    <i class="bi bi-cart-fill fs-1 text-dark"></i>
+                    <span class="ms-2 fw-semibold text-dark">Carrito</span>
+                    <span class="ms-2 numerito cart-count badge bg-dark text-white rounded-pill">0</span>
+                  </a>
+                </li>
+
+
+                <!-- Buscador (solo mobile) -->
+                <li class="d-lg-none nav-item position-relative">
+                  <a href="#search" class="nav-link position-relative d-inline-flex align-items-center search-button">
+                      <i class="bi bi-search fs-4"></i> <!--LUPA -->
+                    <span class="ms-2 fw-semibold text-dark">Buscar</span>
+                  </a>
+                </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- CARRITO DESKTOP -->
+      <div class="col-3 col-lg-auto">
+        <ul class="list-unstyled d-flex m-0">
+          <!-- Desktop -->
+        <li class="d-none d-lg-block container">
+          <a href="carrito.html" class="boton-menu boton-carrito text-decoration-none mx-3 position-relative" style="color: black;">
+            <i class="bi bi-cart-fill fs-4 me-1"></i>
+            <span class="numerito cart-count position-absolute top-0 start-100 translate-middle badge bg-dark text-white rounded-pill">0</span>
+          </a>
+        </li>
+          <li class="search-box d-none d-sm-block mx-2">
+            <a href="#search" class="search-button">
+              <i class="bi bi-search fs-4"></i> <!--LUPA -->
+            </a>
+          </li>
+        </ul>
+      </div>
+      <!-- FIN CARRITO DESKTOP -->
+    </div>
+  </div>
+</nav>
+<!-- FIN DEL NAV  -->
+
+<!-- TITULO -->
+
+<div class="container text-center mt-5">
+  <h1>Preguntas Frecuentes</h1>
+  <p class="text-muted fs-5">Resuelve tus dudas y conoce todo sobre nuestras invitaciones digitales</p>
+</div>
+
+
+<!-- FIN DEL TITULO -->
+
+
+<!-- SECTIONS -->
+
+
+<div class="container my-4">
+  <div class="row">
+
+    <!-- Columna 1 -->
+    <div class="col-md-6">
+      <div class="accordion" id="accordionCol1">
+
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+              ¿Qué es una invitación digital?
+            </button>
+          </h2>
+          <div id="collapseOne" class="accordion-collapse collapse">
+            <div class="accordion-body">
+              <p>
+                <strong>Una invitación digital</strong> es un archivo o enlace web que reúne 
+                <strong>toda la información del evento</strong> de forma accesible y práctica.
+              </p>
+              <p>
+                Cuenta con un <strong>subdominio o dominio personalizado y único</strong>, relacionado al evento, que incluye funciones como 
+                <strong>cuenta regresiva, música, videos, mapas de ubicación, fotos, mesa de regalos</strong> y 
+                <strong>confirmación de asistencia</strong> vía enlace o directamente desde la página web.
+              </p>
+              <p>
+                Además, puedes <strong>personalizar cada invitación con el nombre del invitado</strong> y pases correspondientes, brindando la misma atención personalizada 
+                de las invitaciones impresas tradicionales.
+              </p>
+              <p>
+                Se comparte fácilmente a través de <strong>redes sociales o aplicaciones de mensajería</strong>, adaptándose de manera óptima a cualquier dispositivo, 
+                ya sea <strong>celular, tablet, laptop o computadora.</strong>
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+              ¿Cómo realizo un pedido?
+            </button>
+          </h2>
+          <div id="collapseTwo" class="accordion-collapse collapse">
+            <div class="accordion-body">
+              <p>
+                Actualmente, las compras se pueden realizar de dos maneras:
+              </p>
+              <ul class="mb-0">
+                <li>Vía <a href="https://wa.me/message/RPJPB4PBXOXWI1" target="_blank" rel="noopener noreferrer"><strong>WhatsApp</strong></a>, contactándonos directamente.</li>
+                <li>
+                  O a través de nuestra página web, donde puedes <strong>agregar productos al carrito</strong> haciendo clic en el botón <strong>"Agregar"</strong>. 
+                  Luego, desde el carrito, solo tienes que hacer clic en el botón <strong>“PAGAR AHORA”</strong> para completar tu compra.
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+              ¿En cuánto tiempo me lo entregan?
+            </button>
+          </h2>
+          <div id="collapseThree" class="accordion-collapse collapse">
+            <div class="accordion-body">
+              <p>
+                El tiempo de entrega es de <strong>1 a 3 días laborables</strong>, según el modelo de invitación seleccionado.
+              </p>
+              <p>
+                La invitación comienza a elaborarse <strong>una vez confirmado el pago</strong> y que el cliente haya proporcionado 
+                <strong>todos los datos e imágenes</strong> que desea incluir en la invitación.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+              ¿Cuántos cambios puedo realizar en la revisión de mi invitación?
+            </button>
+          </h2>
+          <div id="collapseFour" class="accordion-collapse collapse">
+            <div class="accordion-body">
+              <p>
+                Su pedido incluye <strong>tres revisiones gratuitas</strong> y puede tomar hasta <strong>cinco días hábiles</strong> para la aprobación final de la información y las fotos. 
+                Una vez que nos confirme que todo está correcto, procederemos a renderizar y entregar su invitación.
+              </p>
+              <p>
+                Por este motivo, solicitamos a nuestros clientes que revisen cuidadosamente <strong>nombres, direcciones, tildes, mayúsculas, fechas</strong> y demás detalles antes de la entrega final. 
+                Después de entregado el trabajo, cualquier corrección adicional tendrá un <strong>costo extra</strong>.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Nuevo ítem 5 -->
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+              ¿Mi invitación web se puede abrir en todos los celulares y en PC?
+            </button>
+          </h2>
+          <div id="collapseFive" class="accordion-collapse collapse">
+            <div class="accordion-body">
+              <p>
+                Claro que sí, nuestras invitaciones web están optimizadas para abrirse en <strong>celulares, tablets, laptops o computadoras</strong>. 
+                Están diseñadas pensando en esas resoluciones para que tus invitados puedan disfrutar la invitación en cualquier dispositivo.
+              </p>
+              <p>
+                Solo necesitan una <strong>buena conexión a internet</strong> para poder ver la invitación sin inconvenientes.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Nuevo ítem 6 -->
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+              ¿Se puede añadir más páginas a mi invitación?
+            </button>
+          </h2>
+          <div id="collapseSix" class="accordion-collapse collapse">
+            <div class="accordion-body">
+              <p>
+                Dependiendo del modelo elegido, es posible agregar <strong>páginas, fotos u otros elementos adicionales</strong>, lo cual tendrá un <strong>costo extra</strong>.
+              </p>
+              <p>
+                Recomendamos <strong>consultar previamente a la compra</strong> para ofrecerle el mejor servicio personalizado.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Nuevo ítem 7 -->
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+              ¿Cómo puedo comprar mi invitación si soy de Argentina?
+            </button>
+          </h2>
+          <div id="collapseSeven" class="accordion-collapse collapse">
+            <div class="accordion-body">
+              <p>
+                Aceptamos <strong>pagos seguros</strong> a través de <strong>Mercado Pago</strong> o <strong>transferencia bancaria</strong>, para tu comodidad y tranquilidad.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Nuevo ítem 8 -->
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#collapseEight" aria-expanded="false" aria-controls="collapseEight">
+                ¿Cómo puedo comprar mi invitación si no vivo en Argentina?
+            </button>
+          </h2>
+          <div id="collapseEight" class="accordion-collapse collapse">
+            <div class="accordion-body">
+              <p>
+                Aceptamos pagos a través de nuestra página web con <strong>PayPal</strong>, giros internacionales vía <strong>MoneyGram</strong> y la aplicación de <strong>Western Union</strong>. 
+                Nuestro servicio está disponible a <strong>nivel mundial</strong> para tu mayor comodidad.
+              </p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Columna 2 -->
+    <div class="col-md-6">
+      <div class="accordion" id="accordionCol2">
+
+        <!-- Nuevo ítem 9 -->
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#collapseNine" aria-expanded="false" aria-controls="collapseNine">
+              ¿Por cuánto tiempo estará vigente mi invitación web en internet?
+            </button>
+          </h2>
+          <div id="collapseNine" class="accordion-collapse collapse">
+            <div class="accordion-body">
+              <p>
+                Nuestras invitaciones web tienen una vigencia de <strong>un año</strong> a partir de la fecha del evento. 
+                Después de ese período, la invitación será eliminada de la red, aunque puede optar por pagar una 
+                <strong>suscripción anual</strong> para mantenerla activa en internet.
+              </p>
+              <p>
+                También ofrecemos la opción de adquirir un <strong>video guía en formato MP4</strong> de la interfaz de la invitación web como recuerdo, 
+                que se enviará por correo electrónico.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Nuevo ítem 10 -->
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#collapseTen" aria-expanded="false" aria-controls="collapseTen">
+              ¿Realizan invitaciones físicas?
+            </button>
+          </h2>
+          <div id="collapseTen" class="accordion-collapse collapse">
+            <div class="accordion-body">
+              <p>
+                Actualmente no ofrecemos <strong>invitaciones físicas</strong> para su distribución, pero podemos proporcionarle el <strong>diseño digital</strong> listo para que lo lleve a la imprenta y puedan comenzar con la producción de sus invitaciones impresas. Este servicio tiene un <strong>costo adicional</strong>.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Nuevo ítem 11 -->
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#collapseEleven" aria-expanded="false" aria-controls="collapseEleven">
+              ¿Realizan diseños personalizados?
+            </button>
+          </h2>
+          <div id="collapseEleven" class="accordion-collapse collapse">
+            <div class="accordion-body">
+              <p>
+                Sí, ofrecemos <strong>personalización</strong> en algunos de nuestros modelos como parte de nuestros servicios. 
+                Le recomendamos <strong>consultar antes de su compra</strong> para que podamos indicarle las opciones disponibles, 
+                <strong>costos</strong> y <strong>tiempos de entrega</strong> según lo que desee personalizar.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Nuevo ítem 12 -->
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#collapseTwelve" aria-expanded="false" aria-controls="collapseTwelve">
+              ¿Aceptan llamadas telefónicas?
+            </button>
+          </h2>
+          <div id="collapseTwelve" class="accordion-collapse collapse">
+            <div class="accordion-body">
+              <p>
+                Sí, previo contacto por <strong>WhatsApp</strong> o mensaje a través de cualquier <strong>red social</strong>, podemos coordinar un horario para devolverle la llamada y responder todas sus dudas.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Nuevo ítem 13 -->
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#collapseThirteen" aria-expanded="false" aria-controls="collapseThirteen">
+              ¿Con cuánto tiempo de anticipación puedo crear mi invitación digital?
+            </button>
+          </h2>
+          <div id="collapseThirteen" class="accordion-collapse collapse">
+            <div class="accordion-body">
+              <p>
+                <strong>Recomendamos crear la invitación con la siguiente anticipación según el tipo de evento:</strong>
+              </p>
+              <ul>
+                <li>
+                  Para eventos elegantes con código de vestimenta estricto, entre <strong>3 y 6 meses</strong>, para que los invitados tengan tiempo de elegir el atuendo adecuado.
+                </li>
+                <li>
+                  Para bodas casuales e íntimas, entre <strong>1 y 3 meses</strong> de anticipación.
+                </li>
+                <li>
+                  Para bodas que requieren que los invitados viajen al extranjero, lo ideal es enviar las invitaciones con <strong>1 año de anticipación</strong>, permitiendo que puedan planificar y presupuestar con comodidad.
+                </li>
+              </ul>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- Nuevo ítem 14 -->
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#collapseFourteen" aria-expanded="false" aria-controls="collapseFourteen">
+              ¿Se tiene que realizar el 100% del pago para adquirir sus productos?
+            </button>
+          </h2>
+          <div id="collapseFourteen" class="accordion-collapse collapse">
+            <div class="accordion-body">
+              <p>
+                Sí, para comenzar la elaboración de su invitación digital es necesario que se realice el <strong>pago total del pedido</strong>. Esto nos permite asegurar la reserva de su diseño personalizado y cubrir los costos iniciales del trabajo.
+              </p>
+              <p>
+                El proceso de producción inicia una vez confirmado el pago y que el cliente haya entregado toda la información y materiales necesarios (como textos e imágenes). Esta política nos ayuda a mantener la calidad y los tiempos de entrega que ofrecemos.
+              </p>
+              <p>
+                Entendemos que cada cliente tiene sus particularidades, por eso estamos abiertos a evaluar opciones o condiciones especiales previo acuerdo, pero el estándar es el <strong>pago completo</strong> para poder brindarle el mejor servicio posible y garantizar que su invitación sea creada a medida y entregada en tiempo y forma.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Nuevo ítem 15 -->
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#collapseFifteen" aria-expanded="false" aria-controls="collapseFifteen">
+              ¿Cómo se maneja la confirmación de asistencia?
+            </button>
+          </h2>
+          <div id="collapseFifteen" class="accordion-collapse collapse">
+            <div class="accordion-body">
+              <p>
+                Los invitados pueden <strong>confirmar su asistencia</strong> directamente desde la invitación digital, lo que facilita la organización del evento y permite prever con mayor precisión la cantidad de asistentes.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Nuevo ítem 16 -->
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#collapseSixteen" aria-expanded="false" aria-controls="collapseSixteen">
+              ¿Corrigen errores ortográficos?
+            </button>
+          </h2>
+          <div id="collapseSixteen" class="accordion-collapse collapse">
+            <div class="accordion-body">
+              <p>
+                La redacción básica de su información está incluida en nuestro servicio; sin embargo, no garantizamos la ausencia total de errores al corregir sus textos.
+              </p>
+              <p>
+                Por eso, ofrecemos revisiones previas a la entrega final para que pueda verificar y aprobar toda la información de su invitación, incluyendo mayúsculas, tildes y signos de puntuación.
+              </p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+</div>
+
+
+
+<!-- FIN DE SECTIONS -->
+
+<!-- BUTTON AUTO-SCROLL -->
+
+<button class="btn-scrolltop" id="btn_scrolltop">
+  <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-arrow-up-short" viewBox="0 0 16 16">
+    <path fill-rule="evenodd" d="M8 12a.5.5 0 0 0 .5-.5V5.707l2.146 2.147a.5.5 0 0 0 .708-.708l-3-3a.5.5 0 0 0-.708 0l-3 3a.5.5 0 1 0 .708.708L7.5 5.707V11.5a.5.5 0 0 0 .5.5z"/>
+  </svg>
+</button>
+<script>
+  const btn_scrolltop = document.getElementById("btn_scrolltop")
+    btn_scrolltop.addEventListener('click', () => {
+      window.scrollTo(0, 0)
+    })
+
+  window.onscroll = () => {
+    add_btn_scrolltop()
+  }
+
+  const add_btn_scrolltop = () => {
+    if (window.scrollY < 300) {
+      btn_scrolltop.classList.remove("btn-scrolltop-on")
+    } else {
+      btn_scrolltop.classList.add("btn-scrolltop-on")
+    }
+  }
+
+</script>
+
+
+  <!-- BOTON DE ACCION -->
+
+<button class="button">
+  <a href="https://wa.me/message/RPJPB4PBXOXWI1" alt="boton de whatsapp">
+    <span><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="50" height="50" viewBox="0 0 48 48">
+      <path fill="#fff" d="M4.868,43.303l2.694-9.835C5.9,30.59,5.026,27.324,5.027,23.979C5.032,13.514,13.548,5,24.014,5c5.079,0.002,9.845,1.979,13.43,5.566c3.584,3.588,5.558,8.356,5.556,13.428c-0.004,10.465-8.522,18.98-18.986,18.98c-0.001,0,0,0,0,0h-0.008c-3.177-0.001-6.3-0.798-9.073-2.311L4.868,43.303z"></path><path fill="#fff" d="M4.868,43.803c-0.132,0-0.26-0.052-0.355-0.148c-0.125-0.127-0.174-0.312-0.127-0.483l2.639-9.636c-1.636-2.906-2.499-6.206-2.497-9.556C4.532,13.238,13.273,4.5,24.014,4.5c5.21,0.002,10.105,2.031,13.784,5.713c3.679,3.683,5.704,8.577,5.702,13.781c-0.004,10.741-8.746,19.48-19.486,19.48c-3.189-0.001-6.344-0.788-9.144-2.277l-9.875,2.589C4.953,43.798,4.911,43.803,4.868,43.803z"></path><path fill="#cfd8dc" d="M24.014,5c5.079,0.002,9.845,1.979,13.43,5.566c3.584,3.588,5.558,8.356,5.556,13.428c-0.004,10.465-8.522,18.98-18.986,18.98h-0.008c-3.177-0.001-6.3-0.798-9.073-2.311L4.868,43.303l2.694-9.835C5.9,30.59,5.026,27.324,5.027,23.979C5.032,13.514,13.548,5,24.014,5 M24.014,42.974C24.014,42.974,24.014,42.974,24.014,42.974C24.014,42.974,24.014,42.974,24.014,42.974 M24.014,42.974C24.014,42.974,24.014,42.974,24.014,42.974C24.014,42.974,24.014,42.974,24.014,42.974 M24.014,4C24.014,4,24.014,4,24.014,4C12.998,4,4.032,12.962,4.027,23.979c-0.001,3.367,0.849,6.685,2.461,9.622l-2.585,9.439c-0.094,0.345,0.002,0.713,0.254,0.967c0.19,0.192,0.447,0.297,0.711,0.297c0.085,0,0.17-0.011,0.254-0.033l9.687-2.54c2.828,1.468,5.998,2.243,9.197,2.244c11.024,0,19.99-8.963,19.995-19.98c0.002-5.339-2.075-10.359-5.848-14.135C34.378,6.083,29.357,4.002,24.014,4L24.014,4z"></path><path fill="#40c351" d="M35.176,12.832c-2.98-2.982-6.941-4.625-11.157-4.626c-8.704,0-15.783,7.076-15.787,15.774c-0.001,2.981,0.833,5.883,2.413,8.396l0.376,0.597l-1.595,5.821l5.973-1.566l0.577,0.342c2.422,1.438,5.2,2.198,8.032,2.199h0.006c8.698,0,15.777-7.077,15.78-15.776C39.795,19.778,38.156,15.814,35.176,12.832z"></path><path fill="#fff" fill-rule="evenodd" d="M19.268,16.045c-0.355-0.79-0.729-0.806-1.068-0.82c-0.277-0.012-0.593-0.011-0.909-0.011c-0.316,0-0.83,0.119-1.265,0.594c-0.435,0.475-1.661,1.622-1.661,3.956c0,2.334,1.7,4.59,1.937,4.906c0.237,0.316,3.282,5.259,8.104,7.161c4.007,1.58,4.823,1.266,5.693,1.187c0.87-0.079,2.807-1.147,3.202-2.255c0.395-1.108,0.395-2.057,0.277-2.255c-0.119-0.198-0.435-0.316-0.909-0.554s-2.807-1.385-3.242-1.543c-0.435-0.158-0.751-0.237-1.068,0.238c-0.316,0.474-1.225,1.543-1.502,1.859c-0.277,0.317-0.554,0.357-1.028,0.119c-0.474-0.238-2.002-0.738-3.815-2.354c-1.41-1.257-2.362-2.81-2.639-3.285c-0.277-0.474-0.03-0.731,0.208-0.968c0.213-0.213,0.474-0.554,0.712-0.831c0.237-0.277,0.316-0.475,0.474-0.791c0.158-0.317,0.079-0.594-0.04-0.831C20.612,19.329,19.69,16.983,19.268,16.045z" clip-rule="evenodd"></path>
+      </svg></span>
+  </a>
+</button>
+
+  <!-- FOOTER -->
+  <footer id="footer" class="mt-5">
+    <div class="container">
+      <div class="row d-flex flex-wrap justify-content-between py-5">
+        <div class="col-md-3 col-sm-6">
+          <div class="footer-menu footer-menu-001">
+            <div class="footer-intro mb-4">
+              <a href="index.html">
+                <img src="images/main-logo.png" alt="logo">
+              </a>
+            </div>
+            <p>Brindamos servicio personalizado de invitaciones digitales para eventos. Diseños únicos, edición rápida y envío por WhatsApp o email. Sorprendé a tus invitados fácilmente.</p>
+            <div class="social-links">
+              <ul class="list-unstyled d-flex flex-wrap gap-3">
+                <li>
+                  <a href="#" class="text-secondary">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-whatsapp" viewBox="0 0 16 16">
+                      <path d="M13.601 2.326A7.85 7.85 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.9 7.9 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.9 7.9 0 0 0 13.6 2.326zM7.994 14.521a6.6 6.6 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.56 6.56 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592m3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.73.73 0 0 0-.529.247c-.182.198-.691.677-.691 1.654s.71 1.916.81 2.049c.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232"/>
+                    </svg>
+                  </a>
+                </li>
+                <li>
+                  <a href="#" class="text-secondary">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
+                      <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334"/>
+                    </svg>
+                  </a>
+                </li>
+                <li>
+                  <a href="#" class="text-secondary">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-google" viewBox="0 0 16 16">
+                      <path d="M15.545 6.558a9.4 9.4 0 0 1 .139 1.626c0 2.434-.87 4.492-2.384 5.885h.002C11.978 15.292 10.158 16 8 16A8 8 0 1 1 8 0a7.7 7.7 0 0 1 5.352 2.082l-2.284 2.284A4.35 4.35 0 0 0 8 3.166c-2.087 0-3.86 1.408-4.492 3.304a4.8 4.8 0 0 0 0 3.063h.003c.635 1.893 2.405 3.301 4.492 3.301 1.078 0 2.004-.276 2.722-.764h-.003a3.7 3.7 0 0 0 1.599-2.431H8v-3.08z"/>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 col-sm-6">
+          <div class="footer-menu footer-menu-002">
+            <h5 class="widget-title text-uppercase mb-4">Enlaces rápidos</h5>
+            <ul class="menu-list list-unstyled text-uppercase border-animation-left fs-6">
+              <li class="menu-item">
+                <a href="index.html" class="item-anchor">Inicio</a>
+              </li>
+              <li class="menu-item">
+                <a href="about.html" class="item-anchor">Nuestra historia</a>
+              </li>
+              <li class="menu-item">
+                <a href="menu.html" class="item-anchor">Categorías</a>
+              </li>
+              <li class="menu-item">
+                <a href="carrito.html" class="item-anchor">Carrito</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-md-3 col-sm-6">
+          <div class="footer-menu footer-menu-003">
+            <h5 class="widget-title text-uppercase mb-4">Ayuda e información</h5>
+            <ul class="menu-list list-unstyled text-uppercase border-animation-left fs-6">
+              <li class="menu-item">
+                <a href="https://wa.me/message/RPJPB4PBXOXWI1" class="item-anchor">Contáctanos</a>
+              </li>
+              <li class="menu-item">
+                <a href="faq.html" class="item-anchor">Preguntas frecuentes</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-md-3 col-sm-6">
+          <div class="footer-menu footer-menu-004 border-animation-left">
+            <h5 class="widget-title text-uppercase mb-4">Contáctanos</h5>
+            <p>¿Tienes alguna pregunta o sugerencia? <a href="mailto:contact@yourcompany.com"
+                class="item-anchor">contacto@invitate.com</a></p>
+            <p>¿Necesitas ayuda? Llámanos. <a href="tel:+54 11 11 11 11 11" class="item-anchor">+54 11 11 11 11 11</a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="border-top py-4">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 d-flex flex-wrap">
+            <div class="payment-option">
+              <span>Opciones de pago:</span>
+              <img src="images/2.png" alt="card">
+              <img src="images/1.png" alt="card">
+            </div>
+          </div>
+          <div class="col-md-6 text-end">
+            <p>© Copyright 2025 Invitate. Todos los derechos reservados. Diseñado por <a href="https://portfolio-guillermo-martinez.netlify.app/"
+                target="_blank">Guillermo Martinez</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- FIN DEL FOOTER -->
+
+  <!-- SCRIPTS -->
+
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+  <!-- JS -->
+  <script src="js/jquery.min.js"></script>
+  <script src="js/plugins.js"></script>
+  <script src="js/SmoothScroll.js"></script>
+  <script src="js/script.min.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/menu.js"></script>
+
+  <!-- Bootstrap 5.3.6 -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js" integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO" crossorigin="anonymous"></script>
+
+</body>
+</html>

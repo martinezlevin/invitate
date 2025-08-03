@@ -36,7 +36,7 @@ function cargarProductosCarrito() {
                 <img class="carrito-producto-imagen" src="${producto.imagen}" alt="${producto.titulo}">
                 <div class="carrito-producto-titulo">
                     <small>Título</small>
-                    <h3>${producto.titulo}</h3>
+                    <h6>${producto.titulo}</h6>
                 </div>
                 <div class="carrito-producto-cantidad">
                     <small>Cantidad</small>
@@ -192,6 +192,26 @@ function aumentarCantidad(e) {
 
 // Eliminar producto del carrito
 function eliminarDelCarrito(e) {
+Toastify({
+    text: "Producto eliminado",
+    duration: 3000,
+    close: true,
+    gravity: "top",
+    position: "right",
+    stopOnFocus: true,
+    style: {
+        background: "linear-gradient(to right,rgb(146, 85, 93),rgb(199, 112, 115))",
+        borderRadius: "2rem",
+        textTransform: "uppercase",
+        fontSize: ".75rem"
+    },
+    offset: {
+        x: '1.5rem',
+        y: '1.5rem'
+    }
+}).showToast();
+
+
     const idBoton = e.currentTarget.id;
     const index = productosEnCarrito.findIndex(producto => producto.id === idBoton);
     productosEnCarrito.splice(index, 1);
@@ -202,19 +222,8 @@ function eliminarDelCarrito(e) {
     if (walletContainer.style.display === "block") {
         actualizarBotonMercadoPago();
     }
+    
 
-    Toastify({
-        text: "Producto eliminado",
-        duration: 3000,
-        close: true,
-        gravity: "top",
-        position: "right",
-        style: {
-            background: "linear-gradient(to right, #4b33a8, #785ce9)",
-            borderRadius: "2rem",
-            fontSize: ".75rem"
-        }
-    }).showToast();
 }
 
 // Vaciar carrito
@@ -293,3 +302,5 @@ botonComprar.addEventListener("click", async () => {
         });
     }
 });
+
+

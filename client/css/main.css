@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700;800;900&display=swap');
 
 :root {
-    --clr-main: #0000ab;
+    --clr-main: #B46668;
     --clr-main-light: #ffffff;
     --clr-white: #ececec;
     --clr-gray: #e2e2e2;
@@ -12,7 +12,6 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Rubik', sans-serif;
 }
 
 h1, h2, h3, h4, h5, h6, p, a, input, textarea, ul {
@@ -46,15 +45,10 @@ aside {
     justify-content: space-between;
 }
 
-.logo {
-    font-weight: 400;
-    font-size: 1.3rem;
-}
 
 .menu {
     display: flex;
     flex-direction: column;
-    gap: .5rem;
 }
 
 .boton-menu {
@@ -69,6 +63,7 @@ aside {
     padding: 1rem;
     font-size: .85rem;
     width: 100%;
+    text-decoration: none;
 }
 
 .boton-menu.active {
@@ -108,10 +103,6 @@ aside {
     transform: rotateZ(90deg);
 }
 
-.boton-carrito {
-    margin-top: 2rem;
-}
-
 .numerito {
     background-color: var(--clr-white);
     color: var(--clr-main);
@@ -137,8 +128,13 @@ main {
     padding: 3rem;
 }
 
+.icon-large {
+  font-size: 1rem;
+}
+
+
 .titulo-principal {
-    color: var(--clr-main);
+    color: #000000;
     margin-bottom: 2rem;
 }
 
@@ -173,7 +169,7 @@ main {
     border: 0;
     background-color: var(--clr-white);
     color: var(--clr-main);
-    padding: .4rem;
+    padding: .2rem;
     text-transform: uppercase;
     border-radius: 2rem;
     cursor: pointer;
@@ -208,18 +204,55 @@ main {
 
 .carrito-producto {
     display: flex;
-    justify-content: space-between;
     align-items: center;
     background-color: var(--clr-gray);
     color: var(--clr-main);
     padding: .5rem;
     padding-right: 1.5rem;
     border-radius: 1rem;
+    gap: 1rem;
+    width: 100%;
 }
 
 .carrito-producto-imagen {
     width: 4rem;
     border-radius: 1rem;
+    object-fit: contain;
+}
+
+.carrito-producto-titulo {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+    justify-content: center; 
+}
+
+.carrito-producto-cantidad,
+.carrito-producto-precio,
+.carrito-producto-subtotal {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 0.25rem;
+}
+
+.carrito-producto-titulo {
+    margin-bottom: 1.2rem;
+}
+
+.carrito-producto-cantidad {
+    margin-bottom: 0.9rem;
+}
+
+.carrito-producto-precio {
+    margin-bottom: 0.1rem;
+}
+
+.carrito-producto-subtotal {
+    margin-bottom: 0.1rem;
 }
 
 .carrito-producto small {
@@ -231,37 +264,62 @@ main {
     background-color: transparent;
     color: var(--clr-red);
     cursor: pointer;
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+    font-size: 1.2rem;
 }
 
 .carrito-acciones {
-    display: flex;
-    justify-content: space-between;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  flex-wrap: wrap;
 }
 
 .carrito-acciones-vaciar {
-    border: 0;
-    background-color: var(--clr-gray);
-    padding: 1rem;
-    border-radius: 1rem;
-    color: var(--clr-main);
-    text-transform: uppercase;
-    cursor: pointer;
+  border: 0;
+  background-color: var(--clr-gray);
+  padding: 1rem 2rem;
+  border-radius: 1rem;
+  color: var(--clr-main);
+  text-transform: uppercase;
+  cursor: pointer;
+  height: 100%;
+}
+
+
+.carrito-acciones-izquierda {
+  flex: 1;
+  display: flex;
+  justify-content: flex-start;
 }
 
 .carrito-acciones-derecha {
-    display: flex;
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+  gap: 1rem;
+  align-items: center;
+  text-align: right;
 }
 
 .carrito-acciones-total {
-    display: flex;
-    background-color: var(--clr-gray);
-    padding: 1rem;
-    color: var(--clr-main);
-    text-transform: uppercase;
-    border-top-left-radius: 1rem;
-    border-bottom-left-radius: 1rem;
-    gap: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--clr-gray);
+  padding-top: 1rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  color: var(--clr-main);
+  text-transform: uppercase;
+  border-radius: 1rem;
+  gap: 1rem;
+  height: 100%;
 }
+
 
 .carrito-acciones-comprar {
     border: 0;
@@ -397,7 +455,7 @@ main {
 
 /* Contenedor del botón */
 #wallet_container {
-    max-width: 300px; /* Ajusta este valor según necesites */
+    max-width: 300px;
     margin: 20px auto;
 }
 
@@ -462,4 +520,215 @@ main {
 /* Iconos de los botones */
 .contador-cantidad .bi {
     font-size: 12px;
+}
+
+
+
+
+/* Estilos adicionales para el botón de MercadoPago */
+#wallet_container {
+    margin-top: 20px;
+    max-width: 500px;
+    display: none;
+}
+
+#checkout-btn {   
+    height: 100%;
+    padding: 1.1rem; 
+    display: flex;
+    align-items: center;
+    text-transform: uppercase;
+    border-radius: 1rem;;
+    gap: 1rem;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s;
+}
+
+#checkout-btn:hover {
+    background-color: #252850;
+}
+
+#checkout-btn:disabled {
+    background-color: #cccccc;
+    cursor: not-allowed;
+}
+
+.pay-btn {
+  height: 100%;
+  position: relative;
+  padding: 12px 24px;
+  font-size: 16px;
+  background: #1a1a1a;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  transition: all 0.3s ease;
+}
+
+.pay-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.4);
+}
+
+.icon-container {
+  position: relative;
+  width: 24px;
+  height: 24px;
+}
+
+.icon {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 24px;
+  height: 24px;
+  color: #22c55e;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.default-icon {
+  opacity: 1;
+  visibility: visible;
+}
+
+/* Hover animations */
+.pay-btn:hover .icon {
+  animation: none;
+}
+
+.pay-btn:hover .wallet-icon {
+  opacity: 0;
+  visibility: hidden;
+}
+
+.pay-btn:hover .card-icon {
+  animation: iconRotate 2.5s infinite;
+  animation-delay: 0s;
+}
+
+.pay-btn:hover .payment-icon {
+  animation: iconRotate 2.5s infinite;
+  animation-delay: 0.5s;
+}
+
+.pay-btn:hover .dollar-icon {
+  animation: iconRotate 2.5s infinite;
+  animation-delay: 1s;
+}
+
+.pay-btn:hover .check-icon {
+  animation: iconRotate 2.5s infinite;
+  animation-delay: 1.5s;
+}
+
+/* Active state - show only checkmark */
+.pay-btn:active .icon {
+  animation: none;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s ease;
+}
+
+.pay-btn:active .check-icon {
+  animation: checkmarkAppear 0.6s ease forwards;
+  visibility: visible;
+}
+
+.btn-text {
+  font-weight: 600;
+  font-family:
+    system-ui,
+    -apple-system,
+    sans-serif;
+}
+
+@keyframes iconRotate {
+  0% {
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(10px) scale(0.5);
+  }
+  5% {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0) scale(1);
+  }
+  15% {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0) scale(1);
+  }
+  20% {
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-10px) scale(0.5);
+  }
+  100% {
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-10px) scale(0.5);
+  }
+}
+
+@keyframes checkmarkAppear {
+  0% {
+    opacity: 0;
+    transform: scale(0.5) rotate(-45deg);
+  }
+  50% {
+    opacity: 0.5;
+    transform: scale(1.2) rotate(0deg);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1) rotate(0deg);
+  }
+}
+
+
+
+
+.carrito-producto {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 1rem;
+  border-bottom: 1px solid #ccc;
+  width: 100%; 
+}
+
+/* Secciones internas */
+.carrito-producto > div,
+.carrito-producto > button {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  align-items: flex-start;
+}
+
+/* Imagen con tamaño fijo */
+.carrito-producto-imagen {
+  width: 80px;
+  height: auto;
+  object-fit: contain;
+}
+
+.contenedor-carrito {
+  text-align: center; 
+}
+
+.carrito-vacio img {
+  width: 80%;     
+  max-width: 500px;
+  height: aut;   
+  margin-top: 15px; 
 }
